@@ -1,0 +1,226 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #09181F;
+}
+
+/*Header stuff (Includes the hello, intro text, image, and buttons*/
+header {
+    margin: 50px;
+}
+
+/*Ok all of this I'm using px until I can figure out how to make text size responsive because I just wanna lay out the pages rn*/
+h1 {
+    font-size: 120px;
+    color: #E1E6E5;
+    font-family: 'Courier New';
+}
+
+h5 {
+    font-size: 40px;
+    color: #E1E6E5;
+    font-family: 'Lato';
+    /*Idk if this is applying*/
+    font-style: bold;
+}
+
+/*...I can't center align these fuck- fix it later*/
+.header-links {
+    background-color: #556972;
+    color: #E1E6E5;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.header-links:hover {
+    background-color: #750808;
+    color: #E1E6E5;
+}
+
+.header-img {
+    max-width: 250px;
+    padding-top: 30px;
+    /*How do I fucking center align this :)*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Navbar*/
+/*I have no fucking idea where the hover effect is coming from*/
+.navbar .navbar-nav .nav-link {
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Courier New';
+    color: #E1E6E5;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #556972;
+}
+
+/*This should apply to all except the first- I'll just make it so it doesn't have class active ok got it*/
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #E1E6E5;
+    background-color: #09181f;
+}
+
+.nav-image {
+    max-height: 80px;
+    max-width: 80px;
+}
+
+/*Homepage*/
+.intro-paragraph {
+    margin: 30px;
+    color: #E1E6E5;
+    padding: 20px;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+h2 {
+    color: #E1E6E5;
+    text-align: center;
+}
+
+.img-carousel {
+    max-height: 300px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Work Experience*/
+
+
+
+/*Contact*/
+
+/*Form on contact, credit: https://uiverse.io/Phelix652/selfish-pug-28*/
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    border-radius: 20px;
+}
+
+#heading {
+    text-align: center;
+    margin: 2em;
+    color: #E1E6E5;
+    font-size: 2em;
+    font-family: 'Courier New';
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #556972;
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #556972;
+}
+
+.form .btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2.5em;
+}
+
+.button1 {
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-image: linear-gradient(163deg, #E1E6E5 0%, #556972 100%);
+    color: #09181F;
+}
+
+.button1:hover {
+    background-image: linear-gradient(163deg, #757575 0%, #2e3c42 100%);
+    color: #E1E6E5;
+}
+
+.card {
+    background-image: linear-gradient(163deg, #E1E6E5 0%, #556972 100%);
+    border-radius: 22px;
+    transition: all .3s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card2 {
+    border-radius: 0;
+    transition: all .2s;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+/*Footer*/
+footer {
+    background-color: #556972;
+    color: #E1E6E5;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+/*Hopefully stuff for every page*/
+.break-line {
+    background-color: #556972;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-height: 2px;
+    z-index: 10000px;
+}
