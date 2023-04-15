@@ -46,12 +46,16 @@ h5 {
 }
 
 .header-img {
+    display: block;
     max-width: 250px;
     padding-top: 30px;
     /*How do I fucking center align this :)*/
     margin-left: auto;
     margin-right: auto;
 }
+
+/*Background image idea- just to make it somewhat animated / interesting this'd only be on the top part
+https://alvarotrigo.com/blog/animated-backgrounds-css/ */
 
 /*Navbar*/
 /*I have no fucking idea where the hover effect is coming from*/
@@ -83,6 +87,41 @@ h5 {
     max-width: 80px;
 }
 
+/*Credit: JulioCodes https://github.com/juliocodes-sm/Reels/tree/main/Buttons/02*/
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #E1E6E5;
+    overflow: hidden;
+    transition: color 1s;
+}
+
+.nav-link:hover {
+    color: #556972;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: -1;
+    width: 150%;
+    height: 100%;
+    background-color: #E1E6E5;
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: left;
+    transition: transform 1s;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1) skewX(35deg);
+}
+
+
+
 /*Homepage*/
 .intro-paragraph {
     margin: 30px;
@@ -98,10 +137,8 @@ h2 {
 }
 
 .img-carousel {
-    max-height: 300px;
-    max-width: 500px;
-    display: flex;
-    justify-content: center;
+    max-height: 400px;
+    max-width: 800px;
 }
 
 /*Work Experience*/
@@ -124,9 +161,9 @@ h2 {
 
 #heading {
     text-align: center;
-    margin: 2em;
+    margin: 1em;
     color: #E1E6E5;
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: 'Courier New';
 }
 
@@ -203,6 +240,43 @@ h2 {
 
 .card:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.overlay {
+    background-color: black;
+    opacity: 90%;
+    max-width: 500px;
+    overflow: hidden;
+    position: relative;
+    /*OK THIS SPECIFICALLY THIS USE THIS FOR CENTERING EVERYTHING IT WORKS*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*I'm gonna swap the background to be a phoenix (which I need to draw but leave that for later) for now gonna do a filler background*/
+.background {
+    background: url("https://i.pinimg.com/736x/17/66/a2/1766a262565c6dc53f39ed9e96ee55c7--art-addiction-phoenix.jpg") no-repeat fixed 0 0 / cover;
+}
+
+/*Ok this might have done nothing- I might have to change the margin on the reach out text*/
+#contact-line {
+    margin-top: 0px;
+}
+
+.contact-note {
+    color: #E1E6E5;
+}
+
+/*Ok why- why isn't this working
+The problem is it's showing the actual contact thing- like it's partially transparent. Want it to be solid color*/
+.contact-card {
+    opacity: 100%;
+    background-color: #09181f;
+}
+
+.broken-field {
+    display: none;
 }
 
 /*Footer*/

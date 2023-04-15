@@ -68,69 +68,101 @@
                     <b><a class="nav-link" href="certifications.html">Certifications</a></b>
                 </li>
                 <li class="nav-item">
-                    <b><a class="nav-link" href="contact.html">Contact</a></b>
+                    <b><a class="nav-link active" href="contact.html">Contact</a></b>
                 </li>
         </ul>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6"></div>
+    
+    <!--Trying a new format- using Katie's Komets code just gonna redo some stuff-->
+    <div class="container-fluid background">
+        <!--Can we- can we make the whole thing have a hover effect instead of only on the text...-->
+        
             <!--Credit: https://uiverse.io/Phelix652/selfish-pug-28-->
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card2">
-                        <form class="form" action="https://formspree.io/f/xnqynpjd" method="POST">
-                            <p id="heading">Reach out!</p>
-                            <div class="field">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-person-circle input-icon" viewBox="0 0 16 16">
-                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                    <path fill-rule="evenodd"
-                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                                </svg>
-                                <input type="text" class="input-field" placeholder="Name" autocomplete="off"
-                                    name="name">
-                            </div>
-                            <div class="field">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope input-icon"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                                </svg>
-                                <input type="text" class="input-field" placeholder="Email" autocomplete="off" name="email">
-                            </div>
-                            <!--Issue with this one-->
-                            <div class="field">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text input-icon"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
-                                    <path
-                                        d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
-                                </svg>
-                                <!--The textarea isn't applying on here so fix that--->
-                                <textarea type="text" class="input-field" placeholder="Message" autocomplete="off" name="message"></textarea>
-                            </div>
-                            <!--
-                            <div class="field">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-card-text input-icon" viewBox="0 0 16 16">
-                                    <path
-                                        d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
-                                    <path
-                                        d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
-                                </svg>
-                                <textarea type="text" class="input-field contact-text" placeholder="Message"
-                                    autocomplete="off" name="message"></textarea>
-                            </div>
-                            <div class="btn">
-                                <button
-                                    class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> -->
-
-                        </form>
-                    </div>
+            <div class="card overlay">
+                <div class="card2 contact-card">
+                    <!--Actual form to reach-->
+                    <form class="form" action="https://formspree.io/f/xnqynpjd" method="POST">
+                        <p id="heading">Reach out!</p>
+                        <hr class="break-line" id="contact-line">
+                        <!--Paragraph / note text-->
+                        <!--I am not forgetting this idea- If I have time and can figure out make it when you scroll to this the note paragraph opens-->
+                        <div class="contact-note">Hey! If you’re looking to reach out you’re in the right place! Fill in the information and if that doesn’t work then hit the button in the header! Thanks!</div>
+                        <hr class="break-line">
+                        <!--actual form-->
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-circle input-icon" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                            <input type="text" class="input-field" placeholder="Name" autocomplete="off"
+                                name="name">
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope input-icon"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                            <input type="text" class="input-field" placeholder="Email" autocomplete="off" name="email">
+                        </div>
+                        <!--Ha what the fuck-
+                        So- when I delete the broken one under this it stops working
+                    ...what the fuck-->
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-front-fill input-icon" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+                              </svg>
+                              <textarea type="text" class="input-field contact-text" placeholder="Message" autocomplete="off"
+                              name="message"></textarea>
+                        </div>
+                        <div class="btn">
+                            <button
+                                class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
+            <!--Ok wait this is the end of the div- so why isn't it working from here-->
         </div>
-    </div>
+        <footer>footer here</footer>
+
+                        <!--Issue with this one-->
+                        <!--Alright I- I put display-none on this because the above field breaks if I delete it-->
+                        <div class="field broken-field">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text input-icon"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                <path fill-rule="evenodd"
+                                    d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            <!--...I'm fucking sorry HOW DO THE COMMENTS AFFECT THE CODE-
+                            I DELETED THEM AND IT STOPPED WORKING?-->
+                            <!--The textarea isn't applying on here so fix that--->
+                            <!--Ok no the- I tried adding a div that applied so... it's just an issue with this-->
+                             
+                        </div>
+                    
+                        <!--Ok problem I literally can't code anything under here- nothing's showing up-->
+                        <!--Ok more of a problem I can't even code anything outside of the form below this... what the fuck-->
+                        <!--
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-card-text input-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                <path
+                                    d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            <textarea type="text" class="input-field contact-text" placeholder="Message"
+                                autocomplete="off" name="message"></textarea>
+                        </div>
+                        <div class="btn">
+                            <button
+                                class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> -->
+                    
+ <!--end of overlay-->
