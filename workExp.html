@@ -44,5 +44,53 @@
     </header>
     
     <!--Navbar-->
-    
+    <!--Ok no no no why- why can't I delete sticky top why does that disable the animation-->
+    <!--I am going to turn off this fucking navbar once you scroll IT WILL NOT STAY-->
+    <nav class="navbar navbar-expand-xl navbar-light sticky-top" id="navbar-stay">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler13"
+            aria-controls="myNavbarToggler13" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Uh- ok I want this aligned to the left... check this stuff idk https://www.studytonight.com/bootstrap/how-to-align-navbar-items-in-left-center-or-right -->
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <!--So I moved this out because I don't want it to close I want it to stay on mobile display- looks like it might work? Too early to tell-->
+                <b><a class="nav-link" href="index.html">Home</a></b>
+            </li>
+            <div class="collapse navbar-collapse col-md-4" id="myNavbarToggler13">
+                <li class="nav-item">
+                    <b><a class="nav-link active" href="workExp.html">Work Experience</a></b>
+                </li>
+                <li class="nav-item">
+                    <b><a class="nav-link" href="portfolio.html">Portfolio</a></b>
+                </li>
+                <li class="nav-item">
+                    <b><a class="nav-link" href="certifications.html">Certifications</a></b>
+                </li>
+                <li class="nav-item">
+                    <b><a class="nav-link" href="contact.html">Contact</a></b>
+                </li>
+        </ul>
+        </div>
+    </nav>
+    <!--So I think I'm gonna build a second navbar so remove class sticky from the first one and do a second
+    one that'll link to each section- yes this page will be built similarly to parallax-->
+    <!--Wait ok- idea- this could be a temporary solution build a second navbar that just looks like it's attached-->
+    <!--Alright we're good now please fucking center align-->
+    <nav class="sticky-top work-nav justify-content-center">
+        <div class="crew-nav">
+            <div class="navcolor" id="navbar">
+                <a href="#education" id="education" class="work-exp-nav">Education</a>
+                <a href="#work-experience-div" id="work-exp" class="work-exp-nav">Work Experience</a>
+                <a href="#interests" id="interests" class="work-exp-nav">Interests</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="bgimg Education">
+            <div class="caption">
+                <span class="name">- ORGANIZATIONS -</span>
+            </div>
+        </div>
+    </div>
 </body>

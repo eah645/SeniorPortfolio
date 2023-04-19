@@ -120,7 +120,6 @@ https://alvarotrigo.com/blog/animated-backgrounds-css/ */
     transform: scaleX(1) skewX(35deg);
 }
 
-
 /*Trying out an active class animation, I want this to be on hover but I'll do it later*/
 /*Credit if it works: https: //codepen.io/digital_playground/pen/RwaVXOL*/
 /*Ok wait this is an entire new- something- I need to make a file just for this glow effect- ok*/
@@ -135,8 +134,7 @@ https://alvarotrigo.com/blog/animated-backgrounds-css/ */
     --shine-effect: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
     --shine-transition: all 0.65s ease-in-out;
 }
-
-.btn {
+.nav-link.active {
     position: relative;
     overflow: hidden;
     font-size: 1.1rem;
@@ -147,12 +145,10 @@ https://alvarotrigo.com/blog/animated-backgrounds-css/ */
     color: var(--btn-text-color);
     background: var(--btn-bg);
 }
-
-.btn:not(:last-child) {
+.nav-link.active:not(:last-child) {
     margin-bottom: 3rem;
 }
-
-.btn::before {
+.nav-link.active::before {
     content: "";
     position: absolute;
     top: 0;
@@ -160,18 +156,30 @@ https://alvarotrigo.com/blog/animated-backgrounds-css/ */
     height: 100%;
     background: var(--shine-effect);
 }
-
-.btn-hover::before {
+.active-hover::before {
     left: -100%;
     transition: var(--shine-transition);
 }
-
-.btn-hover:hover {
+.active-hover:hover {
     box-shadow: var(--btn-shadow);
 }
-
-.btn-hover:hover::before {
+.active-hover:hover::before {
     left: 100%;
+}
+
+.active-anim::after {
+    animation: shine 5s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+        transition-property: left;
+   }
+    11.5044247788%, 100% {
+        left: 100%;
+        transition-property: left;
+   }
 }
 
 /*Homepage*/
@@ -195,7 +203,58 @@ h2 {
 
 /*Work Experience*/
 
+/*Work experience navbar*/
+/*More trying to make the nav work-*/
+#navbar {
+    background-color: #09181F;
+    overflow: hidden;
+    transition: background-color 0.5s;
+    height: auto;
+    margin-top: 20px;
+}
 
+/*Ok so plan is write a function that adds this class as soon as you scroll so it FUCKING STAYS*/
+/*...change it to a fucking id*/
+#navbar-stay {
+    position: relative;
+}
+
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    color: #E1E6E5;
+    transition: color 0.5s;
+    height: auto;
+}
+
+.work-exp-nav {
+    background-color: #556972;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.bgimg {
+    position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("#");
+        min-height: 400px;
+}
+
+.caption {
+    position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #E9C2F1;
+}
 
 /*Contact*/
 
