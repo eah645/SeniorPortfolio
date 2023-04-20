@@ -104,7 +104,7 @@
     <!--Credit for progress bar: https://www.youtube.com/watch?v=8ULg-7SvP2o-->
     <!--Early learning center-->
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-5">
             <ul class="school-lists">
                 <li class="schools">
                     <p class="school-title">Abbott Early Learning Center</p>
@@ -112,17 +112,22 @@
                 </li>
             </ul>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             <div class="skills">
                 <div class="progress-bar">
                     <div class="html"><span>100%</span></div>
                 </div>
             </div>
         </div>
+        <div class="col-lg-3 d-lg-block d-md-none d-sm-none">
+            <img src="images/WorkExp-Img/AbbottEarlyLearningCenterImg.png" alt="Abbott Early Learning Center Logo" class="education-img">
+        </div>
+        <!--So- I'd like to make it so that on only large screens this becomes a 3 way thing where
+        there's also an image for each school-->
     </div>
     <!--Elementary School-->
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-5">
             <ul class="school-lists">
                 <li class="schools">
                     <p class="school-title">Frank J Dugan Elementary School</p>
@@ -130,17 +135,21 @@
                 </li>
             </ul>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             <div class="skills">
                 <div class="progress-bar">
                     <div class="html"><span>100%</span></div>
                 </div>
             </div>
         </div>
+        <div class="col-lg-3 d-lg-block d-md-none d-sm-none">
+            <img src="images/WorkExp-Img/DuganLogo.png" alt="Frank J. Dugan Elementary School Logo"
+                class="education-img">
+        </div>
     </div>
     <!--Middle School-->
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-5">
             <ul class="school-lists">
                 <li class="schools">
                     <p class="school-title">Marlboro Middle School</p>
@@ -148,17 +157,20 @@
                 </li>
             </ul>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             <div class="skills">
                 <div class="progress-bar">
                     <div class="html"><span>100%</span></div>
                 </div>
             </div>
         </div>
+        <div class="col-lg-3 d-lg-block d-md-none d-sm-none">
+            <img src="images/WorkExp-Img/MarlboroMiddleSchoolLogo.png" alt="Marlboro Middle School Logo" class="education-img">
+        </div>
     </div>
     <!--High School-->
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-5">
             <ul class="school-lists">
                 <li class="schools">
                     <p class="school-title">Marlboro High School</p>
@@ -166,12 +178,15 @@
                 </li>
             </ul>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-lg-4">
             <div class="skills">
                 <div class="progress-bar">
-                    <div class="html"><span>100%</span></div>
+                    <div class="current"><span>75%</span></div>
                 </div>
             </div>
+        </div>
+        <div class="col-lg-3 d-lg-block d-md-none d-sm-none">
+            <img src="images\WorkExp-Img\MarlboroHighSchoolLogo.png" alt="Marlboro High School Logo" class="education-img">
         </div>
     </div>
 </div>
@@ -204,4 +219,19 @@
             </ul>
         </div>   
     </div>
+    <!--This is not working great--->
+    <script>
+        $(function() {
+                $(".school-lists").inViewport(
+                    function () {
+                        $(this).addClass("html");
+                        $(this).addClass("current");
+                    },
+                    function () {
+                        $(this).removeClass("html");
+                        $(this).removeClass("current");
+                    }
+                );
+            });
+    </script>
 </body>

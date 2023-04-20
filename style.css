@@ -316,23 +316,32 @@ h2 {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background: #222;
+    background: #09181F;
     float: right;
     margin-top: -15px;
     margin-right: -20px;
-    color: #fff;
+    color: #E1E6E5;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .html {
-    background: #e91e63;
+    background: #E1E6E5;
     animation: html 1s linear forwards;
 }
 
 .html span {
-    border: 1px solid #e91e63;
+    border: 1px solid #E1E6E5;
+}
+
+.current {
+    background: #E1E6E5;
+    animation: current 1s linear forwards;
+}
+
+.current span {
+    border: 1px solid #E1E6E5;
 }
 
 @keyframes html {
@@ -341,6 +350,22 @@ h2 {
         width: 99%;
     }
 }
+
+@keyframes current {
+    100% {
+        /*Might leave it on 99 because I think it runs twice if it's 100? Which- idk why*/
+        width: 75%;
+    }
+}
+
+/*Fix alignment on all the images I'd like them to overlap*/
+.education-img {
+    max-height: 150px;
+    align-self: left;
+}
+
+/*Maybe the float thing will make it overlap? Combining this with fade in on scroll so- fun
+https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
 
 /*Contact*/
 
