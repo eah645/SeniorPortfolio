@@ -243,7 +243,7 @@ h2 {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url("#");
+        background-image: url("https://media.istockphoto.com/id/1313302904/vector/blue-bird-feather-icon-decorative-design-element-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=F_UWic3Y8QdxWFpT3VWxS07mkFLFnU6dUT7eSQhVoPg=");
         min-height: 400px;
 }
 
@@ -253,7 +253,38 @@ h2 {
         top: 50%;
         width: 100%;
         text-align: center;
-        color: #E9C2F1;
+        /*May change color- It'll be a darker picture with a blue feather because that looks cool
+        so... filler color will be the dark blue*/
+        color: #09181F;
+        font-family: 'Courier New';
+        font-size: 33px;
+        
+}
+
+.whiteDesc {
+    color: #E1E6E5;
+    background-color: #556972;
+    text-align: center;
+    padding: 50px 80px;
+   font-family: 'Lato';
+   /*Deciding if I wanna keep this- if I do I need to add it to all pages*/
+    font-variant: small-caps;
+  }
+
+  .break-line-2 {
+    background-color: #09181F;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-height: 2px;
+    z-index: 10000px;
+}
+
+.school-lists {
+    justify-content: left;
+}
+
+.schools {
+    color: black;
 }
 
 /*Contact*/
