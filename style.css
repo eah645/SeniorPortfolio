@@ -281,10 +281,65 @@ h2 {
 
 .school-lists {
     justify-content: left;
+    list-style: none;
 }
 
 .schools {
     color: black;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.school-title {
+    font-size: 20px;
+}
+
+/*Testing stuff for animated progressbars*/
+/*Credit: https://www.youtube.com/watch?v=8ULg-7SvP2o*/
+.progress-bar {
+    background: #959595;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html {
+    background: #e91e63;
+    animation: html 1s linear forwards;
+}
+
+.html span {
+    border: 1px solid #e91e63;
+}
+
+@keyframes html {
+    100% {
+        /*Might leave it on 99 because I think it runs twice if it's 100? Which- idk why*/
+        width: 99%;
+    }
 }
 
 /*Contact*/
