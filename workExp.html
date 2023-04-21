@@ -190,34 +190,44 @@
         </div>
     </div>
 </div>
-
-
-
-
-        <!--Work history- this'll be fun I wanted to do a JSON file with this right-->
+        <!--Notes:
+        If I want to do a desktop and mobile layout (which as I'm building I might do- still deciding) then build two separate divs and turn them on/off-->
+        <!--Desktop work history-->
         <div class="bgimg Work-Exp">
             <div class="caption">
                 <b><span class="name">- Work Experience -</span></b>
             </div>
         </div>   
         <div class="whiteDesc justify-content-center">
-            <h4>I am currently a high school senior going to attend Rutgers University
-                starting in fall 2023, hoping to major in Information Technology and Informatics
-            </h4>
-            <hr class="break-line-2">
-            <!--Style thing I don't care about rn- this is showing up bigger than the h4 so- fix that-->
-            <h5>Educational History</h5>
-            <!--So basic idea for animation: I know you can do scrollintoview stuff with parallax
-            basically that like do the school logos fading in from the top as you scroll past the titles
-            They could also stack like- be on top of each other like a collage thing-->
-            <ul class="school-lists">
-                <!--Ok that's great- why isn't this showing up-->
-                <li class="schools">
-                    <p>Abbott Early Learning Center</p>
-                    <small>2010 - 2011</small>
-                </li>
-            </ul>
-        </div>   
+            <div class="row">
+                <div class="col-lg-5">
+                    <h5 class="work-header">Work</h5>
+                    <hr class="break-line-2">
+                    <!--...I'm starting to notice the desktop layout will look a lot like the education one and I don't want that?
+                    Like I want them to be different since I want each section to show off different skills I can do. So...
+                    I think I might just make the mobile layout the overall one-->
+                    <!--Alright so- let's still use JSON but unlike portfolio page let's put the jobs as buttons on here and make it draw in json data-->
+                    <button class="workBtn" id="orchardsBtn">
+                        <span>Eastmont Orchards</span>
+                    </button>
+                    <!--Some filler buttons because I'd like to build a kinda slideshow here
+                    I want it to be like once there isn't space on the screen it goes off- kinda like a see more menu- look this makes sense in my head idk how to code it-->
+                    <!--...what the fuck why are they stacking-->
+                    <!--Ok it's something in the css great- in the code from uiverse so dammit-->
+                    <button class="workBtn" id="orchardsBtn">
+                        <span>Eastmont Orchards</span>
+                    </button>
+                    <hr class="break-line-2">
+                </div>
+                <div class="col-lg-6 work-total-desc">
+                    <!--Alright vue here vue now- I'll build the layout with regular html-->
+                    <h5 class="work-date">Date worked: {{ json code here }} 2021 - current</h5>
+                    <h5 class="workDesc">{{ json code here again, putting filler text so I can see how it looks }}
+                        Summer / fall job where I rang up customers, restocked products, and aided customers in finding products across the orchard. Gained experience in customer service
+                    </h5>
+                </div>
+            </div>
+        </div>
     </div>
     <!--This is not working great--->
     <script>
