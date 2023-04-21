@@ -22,3 +22,9 @@ function myFunction() {
       }
     );
   }
+
+  //Workexp function that might actually work-
+  //Write the function so it adds a class that keeps the altered color while clicked onto and removes it once clicked off
+  function workButton() {
+    document.getElementByClassName("workBtn").addClass(".workBtn-active");
+  }

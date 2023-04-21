@@ -214,7 +214,7 @@
                     I want it to be like once there isn't space on the screen it goes off- kinda like a see more menu- look this makes sense in my head idk how to code it-->
                     <!--...what the fuck why are they stacking-->
                     <!--Ok it's something in the css great- in the code from uiverse so dammit-->
-                    <button class="workBtn" id="orchardsBtn">
+                    <button class="workBtn" id="orchardsBtn" onclick="workButton()">
                         <span>Eastmont Orchards</span>
                     </button>
                     <hr class="break-line-2">
@@ -230,18 +230,5 @@
         </div>
     </div>
     <!--This is not working great--->
-    <script>
-        $(function() {
-                $(".school-lists").inViewport(
-                    function () {
-                        $(this).addClass("html");
-                        $(this).addClass("current");
-                    },
-                    function () {
-                        $(this).removeClass("html");
-                        $(this).removeClass("current");
-                    }
-                );
-            });
-    </script>
+    <script src="script.js"></script>
 </body>
