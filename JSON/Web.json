@@ -1,0 +1,249 @@
+[
+    {  
+      "year": "1",
+      "webImg": "#",
+      "webTitle": "First Homepage",
+      "webDesc": "First homepage I created using HTML and CSS",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+    {  
+      "year": "1",
+      "webImg": "#",
+      "webTitle": "Career Website",
+      "webDesc": "Describes a potential career in animation",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+    {  
+      "year": "1",
+      "webImg": "#",
+      "webTitle": "Aesop's Morals",
+      "webDesc": "Website with animations about Aesop's morals",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "1",
+      "webImg": "#",
+      "webTitle": "Photo Gallery",
+      "webDesc": "Photo gallery with prices and contact options",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "1",
+      "webImg": "#",
+      "webTitle": "First Portfolio",
+      "webDesc": "First portfolio I made using HTML and CSS",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "1",
+      "webImg": "#",
+      "webTitle": "Xbox vs PS4",
+      "webDesc": "Website that compares Xbox and PS4",
+      "bonusDesc": "Collab with Chloe Lee and Griffin ZeidenWeber",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "1",
+      "webImg": "#",
+      "webTitle": "Ace Attorney: Justice for All",
+      "webDesc": "Website with a walkthrough of Ace Attorney: Justice for All",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Dad Joke",
+      "webDesc": "Website built with JavaScript to tell dad jokes",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Spooky Ghost",
+      "webDesc": "Website with an animation of a spooky ghost for Halloween 2022",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Quote",
+      "webDesc": "Website built based off a quote from Sherlock Holmes",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Chocolate",
+      "webDesc": "Website built about chocolate and how it's made",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Hero",
+      "webDesc": "Website built with a hero image to describe who my hero is",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Thankfulness",
+      "webDesc": "Website with a slideshow that states what I'm thankful for",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "JavaScript Fields",
+      "webDesc": "Website built with JavaScript with a working text form",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Party Invite",
+      "webDesc": "Invitation to a graduation party with a functioning JavaScript form",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Accordion",
+      "webDesc": "Website built with JavaScript to open and close text on the page",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Random Testimonial",
+      "webDesc": "Website with random changing statements made using JavaScript",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Postcard Generator",
+      "webDesc": "Javascript website made to generate postcards from different states",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Little Bird Toy Company",
+      "webDesc": "Website for the Little Bird Toy Company",
+      "bonusDesc": "Collab with Julia Kong",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+    {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Tip Calculator",
+      "webDesc": "Fully operating tip calculator built using JavaScript",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+    {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "State Facts",
+      "webDesc": "Website built with JavaScript to select a state and be given facts on it",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+    {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Volunteer Form",
+      "webDesc": "Volunteer form for Helping Hands Volunteer Aplication",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+    {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Rock Paper Scissors",
+      "webDesc": "Playable game of rock-paper-scissors made using JavaScript",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "To-Do List",
+      "webDesc": "Allows a user to add or remove items from a to do list, made using JavaScript",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "2",
+      "webImg": "#",
+      "webTitle": "Katie's Komets",
+      "webDesc": "Website built for the Katie's Komets organization",
+    "bonusDesc": "Collab with Julia Kong",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "3",
+      "webImg": "#",
+      "webTitle": "Bootstrap Refresher",
+      "webDesc": "Refresher website built to practice using Bootstrap",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "3",
+      "webImg": "#",
+      "webTitle": "Doodle Jump",
+      "webDesc": "Functioning Doodle Jump game built using JavaScript",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "3",
+      "webImg": "#",
+      "webTitle": "Countdown to Graduation",
+      "webDesc": "Website built with a working clock counting down to my high school graduation",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "3",
+      "webImg": "#",
+      "webTitle": "Crochet Crew",
+      "webDesc": "Active page built for the Crochet Club at Marlboro High School",
+      "BonusDesc": "Collab with Chloe Lee and Rohan Shivlani",
+      "CreditDesc": "Work done on the page:",
+      "CreditArray": ["Built original header", "Positioned mouse scroll animation and text properly", "Made header and navbar fit view height at different sizes", "Made navbar switch color on click and when scrolling into the next section", "Built tutorials and organization section"],
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+  {  
+      "year": "3",
+      "webImg": "#",
+      "webTitle": "NJIT-2: Slideshow",
+      "webDesc": "NJIT project which has a functioning slideshow showing off art projects",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    }
+  
+]

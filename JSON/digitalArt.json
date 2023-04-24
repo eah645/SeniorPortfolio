@@ -1,0 +1,36 @@
+[
+    {
+      "type": "Digital",
+      "file": "images/Art-img/Momo-JiroInRoom.jpg",
+      "popupTitle": "Dorm Room with MHA characters",
+      "popupDesc": "FillerDescription",
+      "popupDetails": ["Based off My Hero Academia", "Another test filler"]
+    },
+    {
+      "type": "Digital",
+      "file": "images/Art-img/CookieKnightCharacterSheet.jpg",
+      "popupTitle": "Cookie Knight Character Sheet",
+      "popupDesc": "FillerDescription",
+      "popupDetails": ["Based off My Hero Academia"]
+    },
+    {
+      "type": "Digital",
+      "file": "images/Art-img/MHA366ShigarakiColoring.jpg",
+      "popupTitle": "MHA Chapter 366 Coloring: Tomura Shigaraki",
+      "popupDesc": "FillerDescription",
+      "popupDetails": ["Based off My Hero Academia"]
+    },
+    {
+      "type": "Digital",
+      "file": "images/Art-img/MHADormRoomRef.jpg",
+      "popupTitle": "Dorm Room",
+      "popupDesc": "FillerDescription",
+      "popupDetails": ["Based off My Hero Academia"]
+    },
+    {
+      "type": "Traditional",
+      "file": "#",
+      "popupTitle": "FillerTitle",
+      "popupDesc": "FillerDescription"
+    }
+  ]

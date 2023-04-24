@@ -433,6 +433,109 @@ h2 {
 /*Maybe the float thing will make it overlap? Combining this with fade in on scroll so- fun
 https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
 
+/*Portfolio stuff*/
+.webContent {
+    display: none;
+  }
+  
+  .artContent {
+    display: none;
+  }
+  
+  .portfolio-buttons {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .portfolio-active {
+    background-color: #556972;
+    color: white;
+    /*Need to fix alignment with this- probably padding or something*/
+    box-shadow: 5px 0px 5px 5px #750808;
+  }
+  
+  /*Add border I think- I think it'd make them look better*/
+  .json-images {
+    max-height: 500px;
+    max-width: 500px;
+    margin: 15px;
+  }
+  
+  .images-div {
+    display: inline-block;
+  }
+  
+  .artPopup {
+    background-color: #e1e6e5;
+    display: block;
+    /*How long do you wanna bet center aligning it will take*/
+    /*I broke it like 3 times nice- I took a video it looked so broken*/
+    /*Justify content doesn't work, align-content: center doesn't work... align-items doesn't work...*/
+    /*Holy shit this kinda works- all the popups are overlapped which isn't good but it is center aligned*/
+  /*   position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%; */
+  }
+  
+  .artPopupHeader {
+    color: black;
+  }
+  
+  /*Feature vue thing*/
+  
+  .feature-row {
+    text-align: vertical;
+  }
+  
+  .feature-background {
+    background-color: #e1e6e5;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    margin-top: 50px;
+    min-height: 250px;
+  }
+  
+  /*I'll set it so it's the size of the screenshot which... I'll edit later*/
+  .feature-image {
+    background-color: cyan;
+    min-height: 50px;
+    float: left;
+    width: 45%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .feature-text {
+    background-color: yellow;
+    min-height: 50px;
+    float: right;
+    width: 50%;
+    margin-top: 25px;
+  }
+  
+  .feature-line {
+    background-color: #750808;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-height: 2px;
+    z-index: 10000px;
+  }
+  
+  /*Holy shit this is the animation I want- at least like the not as complicated part of having the projects fade in let's go- gotta install it but look- it's FadeInDown
+  https://animate.style/  */
+  /*Holy shit use the delay classes use them use them to time it right*/
+  /*...the other animation is slideOutDown. That-that's what it is I just need to give it a stopping point / beginning and end point*/
+  
+  
+  /*Use this to- let's try and do a fade in
+  https://blog.hubspot.com/website/css-fade-in#:~:text=In%20the%20CSS%2C%20use%20the,creates%20the%20fade%2Din%20effect.   */
+  
+  
+
+
 /*Contact*/
 
 /*Form on contact, credit: https://uiverse.io/Phelix652/selfish-pug-28*/

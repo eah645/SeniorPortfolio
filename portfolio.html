@@ -1,0 +1,200 @@
+<!--Oh my god this page broke when I copied it from replit holy shit- fuck-->
+<!--Alright do we- do we just code it from the start???-->
+<!--You're a dumbass it- the JSON isn't fucking added that's why it's not loading anything-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!--Animation css (credit: https://animate.style/)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--My css-->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
+  <script src="https://unpkg.com/vue@3.0.2"></script>
+  <!--JQuery link idk if this'll work-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <title>Erin's portfolio</title>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Hello</h1>
+                <hr class="break-line">
+                <h5>I'm Erin, a senior in high school working with art / design and web development</h5>
+                <div class="btn-header">
+                    <a href="mailto:eah31@optimum.net" type="button" class="header-links border">eah31@optimum.net</a>
+                    <a href="#" type="button" class="header-links border">Socials</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="images/Selfie.png" alt="Image of me" class="header-img">
+            </div>
+        </div>
+    </header>
+    
+    <!--Navbar-->
+    <!--Ok no no no why- why can't I delete sticky top why does that disable the animation-->
+    <!--I am going to turn off this fucking navbar once you scroll IT WILL NOT STAY-->
+    <nav class="navbar navbar-expand-xl navbar-light sticky-top" id="navbar-stay">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler13"
+            aria-controls="myNavbarToggler13" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Uh- ok I want this aligned to the left... check this stuff idk https://www.studytonight.com/bootstrap/how-to-align-navbar-items-in-left-center-or-right -->
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <!--So I moved this out because I don't want it to close I want it to stay on mobile display- looks like it might work? Too early to tell-->
+                <b><a class="nav-link" href="index.html">Home</a></b>
+            </li>
+            <div class="collapse navbar-collapse col-md-4" id="myNavbarToggler13">
+                <li class="nav-item">
+                    <b><a class="nav-link active" href="workExp.html">Work Experience</a></b>
+                </li>
+                <li class="nav-item">
+                    <b><a class="nav-link" href="portfolio.html">Portfolio</a></b>
+                </li>
+                <li class="nav-item">
+                    <b><a class="nav-link" href="certifications.html">Certifications</a></b>
+                </li>
+                <li class="nav-item">
+                    <b><a class="nav-link" href="contact.html">Contact</a></b>
+                </li>
+        </ul>
+        </div>
+    </nav>
+  <div class="container-fluid">
+    <!--Testing the scroll to function here like when you click return to top its here- decide later if im keeping that-->
+    <div class="row">
+      <button class="portfolio-buttons" id="btn" onclick="showWeb()">Web Design</button>
+      <button class="portfolio-buttons" id="artBtn" onclick="showArt()">Art</button>
+    </div>
+    <div class="webContent" id="webStuff">
+      <!--I'm gonna build my idea for this in html / css first- it's the idea for "feature pages" let's do that-->
+      <!--This is gonna need it's own class of hidden because... actually no it's the second part-->
+      <h2>Feature Pages</h2>
+      <!--Writing out my thoughts because fuck it- I think I start with one hr then add an id tag, go into javascript and say on scroll add another hr line and have the animation continue on that- that might be hard I also might not need to add the line and could just add it at the end but it might look slightly weird if scrolled by too quickly- Alright let's do that last for now let's add an id and say on scroll make it start having a cool glow effect and reveal text-->
+      <hr class="feature-line">
+      <!--Onscroll doesn't work... onfocus doesn't work... onkeyup didn't work but didn't expect it to...-->
+      <!--Here's the classes for the basic hover if this stuff doesn't work animate__animated animate__fadeInDown-->
+      <div class="overlay__bar animate__animated animate__fadeInDown" id="ScrollOpenAnimation">
+        <div class="row feature-row overlay__dot">
+          <!--What the fuck why won't these stack- ok so it's an issue with adding margin I... fuck-->
+          <!--Why. Won't. This. Align-->
+          <!--Ok margin auto fixed it nice--->
+          <div class="col-lg-6 feature-background">
+            <div class="feature-image"></div>
+            <div class="feature-text">
+              <p>Test text</p>
+            </div>
+          </div>
+          <div class="col-lg-5 feature-background">
+            <div class="feature-image"></div>
+            <div class="feature-text"></div>
+          </div>
+        </div>
+      </div>
+      <!--Here's the web design vue-->
+      <div id="vue_app">
+        <!--So let's try with vue I'll code it just like the movie gallery with a style display: none so it's hidden. I'll just have that class be removed and it should show? Add this later it has it class="webContent"-->
+        <div id="content">
+          <!--Link this to a function that checks if the i value inside this is a multiple of 4. if it is then make a new row-->
+          <!--Wait ok this is progress- I might not be able to use v-for so need an alternative or something... I want it work automatically when it's called so how-->
+          <!--The error has to be where I'm calling the makeNewRow function-->
+          <h2> {{ title }} </h2>
+          <hr class="feature-line">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 text-center" v-for="(website, i) in websites"> {{ makeNewRow(i) }}
+              <div class="card">
+                <img :src="websites[i].webImg" class=".card-img-top" />
+                <div class="card-body mb-3">
+                  <h5 class="card-title"> {{ websites[i].webTitle }}</h5>
+                  <p class="card-text"> {{ websites[i].webDesc }} </p>
+                  <a href="" class="btn btn-primary btn-left">Visit Page</a>
+                  <a href="" class="btn btn-primary btn-right">See Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="artContent" id="artStuff">
+      <!--And now the art vue-->
+      <!--...ok I- think the easiest way to do this will be to build separate vue files and put them all separately in here-->
+      <div id="vue_app2">
+        <h2>Digital</h2>
+        <hr class="feature-line">
+        <!--Alright move this div but it looks cool-->
+        <div class="animate__animated animate__fadeInDown">
+          <div id="digital"></div>
+          <!--Ok what the fuck why won't it work- it's stacking together instead of being next to each other- do I have to do the fucking ammend child thing-->
+          <!--No ok it was in too many divs now it's working-->
+          <!--Gonna have to fuck around with the order gonna have to fuck around with it a lot to figure out how to make it look good-->
+          <!--WHAT THE FUCK WHY WILL IT ONLY ALIGN WHEN THE IMAGES ARE THE ONLY THING IN THE FOR LOOP-->
+          <!--...ok thank you stack overflow it's display: inline-block -->
+          <div id="ArtType" v-for="(works, i) in digitalArt" class="images-div">
+            <img :src="digitalArt[i].file" class="json-images" @click="active = !active">
+            <div v-if="active"></div>
+            <!--From here is broken so work on it later-->
+            <!--Wait no this works right it's just loading them all over each other- so how do I make it that when you click it only one shows up-->
+            <!--Idk how the hell you do two functions in one so I'm trying to make it that when this gets called it runs the function to check what the i value is -->
+            <div class="artPopup" id="popupArt" v-else onclick="openForm2()">
+              <h3 class="artPopupHeader">{{ digitalArt[i].popupTitle }}</h3>
+              <!--Another image tag with the same image- I should just do that now huh-->
+              <div class="row">
+                <img :src="digitalArt[i].file" alt="..." class="col-lg-9">
+              </div>
+              <div class="row">
+                <div class="artDesc col-lg-6">
+                  {{ digitalArt[i].popupDesc }}
+                </div>
+                <div class="artDesc col-lg-3">
+                  <!--Ok new challenge how to do this- seriously how to make the popup details work where each one is it's own list item and only goes for that i- do I just need to change the for loop-->
+                  <!--Ok why the fuck did you add a for loop that- wasn't necessary it's fine now-->
+                  <ul>
+                    <li>{{ digitalArt[i].popupDetails }}</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Build a back to top button here, i might put it in one of the vue sections but decide later-->
+        <!--Oh this is still in the art div- ok sure-->
+      </div>
+    </div>
+    <button onclick="backToTop()">Back to top</button>
+
+
+  </div>
+  <!--Footer-->
+  <footer class="py-4 text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; Erin's portfolio</small>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <!--javascript links-->
+  <script src="portfolio.js"></script>
+</body>
+
+</html>
