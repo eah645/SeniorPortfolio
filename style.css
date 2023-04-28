@@ -87,6 +87,18 @@ https://alvarotrigo.com/blog/animated-backgrounds-css/ */
     max-width: 80px;
 }
 
+/*This will not go to the right what the fuck*/
+/*What the fuck. I've been trying this for over an hour in total what the fuck*/
+/*Oh my god it was the justify content thing I just had to add a div-
+It does still lag when I open it but we'll deal with that later I think it'll take forever to fix*/
+.willYouGoRight {
+    float: right;
+}
+
+.home-icon {
+    margin-left: 20px;
+}
+
 /*Credit: JulioCodes https://github.com/juliocodes-sm/Reels/tree/main/Buttons/02*/
 
 .nav-link {
@@ -295,6 +307,10 @@ h2 {
     font-size: 20px;
 }
 
+.certificate-img {
+    max-width: 1000px;
+}
+
 /*Testing stuff for animated progressbars*/
 /*Credit: https://www.youtube.com/watch?v=8ULg-7SvP2o*/
 .progress-bar {
@@ -383,6 +399,14 @@ h2 {
 .workDesc {
     text-align: left;
     font-size: 23px;
+}
+
+/*I might add an effect or something to this idk*/
+.card {
+    background-color: #09181F;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Credit: https://uiverse.io/cssbuttons-io/wonderful-baboon-62*/
@@ -516,14 +540,6 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
     margin-top: 25px;
   }
   
-  .feature-line {
-    background-color: #750808;
-    margin-left: 0px;
-    margin-right: 0px;
-    min-height: 2px;
-    z-index: 10000px;
-  }
-  
   /*Holy shit this is the animation I want- at least like the not as complicated part of having the projects fade in let's go- gotta install it but look- it's FadeInDown
   https://animate.style/  */
   /*Holy shit use the delay classes use them use them to time it right*/
@@ -611,7 +627,7 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
     color: #E1E6E5;
 }
 
-.card {
+.card-contact {
     background-image: linear-gradient(163deg, #E1E6E5 0%, #556972 100%);
     border-radius: 22px;
     transition: all .3s;
@@ -629,11 +645,11 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
     border-radius: 20px;
 }
 
-.card:hover {
+.card-contact:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 
-.overlay {
+.overlay-1 {
     background-color: black;
     opacity: 90%;
     max-width: 500px;

@@ -46,16 +46,17 @@
     <!--Navbar-->
     <!--Ok so it's not collapsing... gotta fix that--->
     <!--https://codingyaar.com/responsive-bootstrap-navbar-center-logo/ -->
+
+    <!--Ok so- this navbar's being weird so is the one on workExp where it's not opening- I think I do need to just bring in a working template and change as needed-->
+
     <nav class="navbar navbar-expand-xl navbar-light sticky-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler13"
-            aria-controls="myNavbarToggler13" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <!--So move this to figure out where the fuck it goes- I still need to figure out the lag issue-->
+        <div class="justify-content-start">
         <!--Uh- ok I want this aligned to the left... check this stuff idk https://www.studytonight.com/bootstrap/how-to-align-navbar-items-in-left-center-or-right -->
-        <ul class="navbar-nav">
+        <ul class="navbar-nav me-auto">
             <li class="nav-item">
                 <!--So I moved this out because I don't want it to close I want it to stay on mobile display- looks like it might work? Too early to tell-->
-                <b><a class="nav-link" href="index.html"><img src="images/Logo.jpg" alt="" class="nav-image"></a></b>
+                <b><a class="nav-link active active-hover active-anim" href="index.html">Home</a></b>
             </li>
             <div class="collapse navbar-collapse col-md-4" id="myNavbarToggler13">
                 <li class="nav-item">
@@ -68,9 +69,16 @@
                     <b><a class="nav-link" href="certifications.html">Certifications</a></b>
                 </li>
                 <li class="nav-item">
-                    <b><a class="nav-link active" href="contact.html">Contact</a></b>
+                    <b><a class="nav-link" href="contact.html">Contact</a></b>
                 </li>
+            </div>
         </ul>
+    </div>
+        <div class="willYouGoRight">
+            <button class="navbar-toggler" id="goRight" type="button" data-toggle="collapse" data-target="#myNavbarToggler13"
+                aria-controls="myNavbarToggler13" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
     
@@ -79,7 +87,7 @@
         <!--Can we- can we make the whole thing have a hover effect instead of only on the text...-->
         
             <!--Credit: https://uiverse.io/Phelix652/selfish-pug-28-->
-            <div class="card overlay">
+            <div class="card-contact overlay-1">
                 <div class="card2 contact-card">
                     <!--Actual form to reach-->
                     <form class="form" action="https://formspree.io/f/xnqynpjd" method="POST">

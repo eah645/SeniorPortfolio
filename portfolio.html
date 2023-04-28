@@ -45,35 +45,40 @@
     </header>
     
     <!--Navbar-->
-    <!--Ok no no no why- why can't I delete sticky top why does that disable the animation-->
-    <!--I am going to turn off this fucking navbar once you scroll IT WILL NOT STAY-->
-    <nav class="navbar navbar-expand-xl navbar-light sticky-top" id="navbar-stay">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler13"
-            aria-controls="myNavbarToggler13" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--Uh- ok I want this aligned to the left... check this stuff idk https://www.studytonight.com/bootstrap/how-to-align-navbar-items-in-left-center-or-right -->
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <!--So I moved this out because I don't want it to close I want it to stay on mobile display- looks like it might work? Too early to tell-->
-                <b><a class="nav-link" href="index.html">Home</a></b>
-            </li>
-            <div class="collapse navbar-collapse col-md-4" id="myNavbarToggler13">
-                <li class="nav-item">
-                    <b><a class="nav-link active" href="workExp.html">Work Experience</a></b>
-                </li>
-                <li class="nav-item">
-                    <b><a class="nav-link" href="portfolio.html">Portfolio</a></b>
-                </li>
-                <li class="nav-item">
-                    <b><a class="nav-link" href="certifications.html">Certifications</a></b>
-                </li>
-                <li class="nav-item">
-                    <b><a class="nav-link" href="contact.html">Contact</a></b>
-                </li>
-        </ul>
-        </div>
-    </nav>
+    <!--Ok so it's not collapsing... gotta fix that--->
+    <!--https://codingyaar.com/responsive-bootstrap-navbar-center-logo/ -->
+    <nav class="navbar navbar-expand-xl navbar-light sticky-top">
+      <!--So move this to figure out where the fuck it goes- I still need to figure out the lag issue-->
+      <div class="justify-content-start">
+      <!--Uh- ok I want this aligned to the left... check this stuff idk https://www.studytonight.com/bootstrap/how-to-align-navbar-items-in-left-center-or-right -->
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+              <!--So I moved this out because I don't want it to close I want it to stay on mobile display- looks like it might work? Too early to tell-->
+              <b><a class="nav-link active active-hover active-anim" href="index.html">Home</a></b>
+          </li>
+          <div class="collapse navbar-collapse col-md-4" id="myNavbarToggler13">
+              <li class="nav-item">
+                  <b><a class="nav-link" href="workExp.html">Work Experience</a></b>
+              </li>
+              <li class="nav-item">
+                  <b><a class="nav-link" href="portfolio.html">Portfolio</a></b>
+              </li>
+              <li class="nav-item">
+                  <b><a class="nav-link" href="certifications.html">Certifications</a></b>
+              </li>
+              <li class="nav-item">
+                  <b><a class="nav-link" href="contact.html">Contact</a></b>
+              </li>
+          </div>
+      </ul>
+  </div>
+      <div class="willYouGoRight">
+          <button class="navbar-toggler" id="goRight" type="button" data-toggle="collapse" data-target="#myNavbarToggler13"
+              aria-controls="myNavbarToggler13" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+  </nav>
   <div class="container-fluid">
     <!--Testing the scroll to function here like when you click return to top its here- decide later if im keeping that-->
     <div class="row">

@@ -47,19 +47,17 @@
     <!--Ok no no no why- why can't I delete sticky top why does that disable the animation-->
     <!--I am going to turn off this fucking navbar once you scroll IT WILL NOT STAY-->
     <nav class="navbar navbar-expand-xl navbar-light sticky-top" id="navbar-stay">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler13"
-            aria-controls="myNavbarToggler13" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <!--So move this to figure out where the fuck it goes- I still need to figure out the lag issue-->
+        <div class="justify-content-start">
         <!--Uh- ok I want this aligned to the left... check this stuff idk https://www.studytonight.com/bootstrap/how-to-align-navbar-items-in-left-center-or-right -->
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav me-auto">
             <li class="nav-item">
                 <!--So I moved this out because I don't want it to close I want it to stay on mobile display- looks like it might work? Too early to tell-->
-                <b><a class="nav-link" href="index.html">Home</a></b>
+                <b><a class="nav-link active active-hover active-anim" href="index.html">Home</a></b>
             </li>
             <div class="collapse navbar-collapse col-md-4" id="myNavbarToggler13">
                 <li class="nav-item">
-                    <b><a class="nav-link active" href="workExp.html">Work Experience</a></b>
+                    <b><a class="nav-link" href="workExp.html">Work Experience</a></b>
                 </li>
                 <li class="nav-item">
                     <b><a class="nav-link" href="portfolio.html">Portfolio</a></b>
@@ -70,7 +68,14 @@
                 <li class="nav-item">
                     <b><a class="nav-link" href="contact.html">Contact</a></b>
                 </li>
+            </div>
         </ul>
+    </div>
+        <div class="willYouGoRight">
+            <button class="navbar-toggler" id="goRight" type="button" data-toggle="collapse" data-target="#myNavbarToggler13"
+                aria-controls="myNavbarToggler13" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
     <!--So I think I'm gonna build a second navbar so remove class sticky from the first one and do a second
@@ -82,6 +87,7 @@
             <div class="navcolor" id="navbar">
                 <a href="#education" id="education" class="work-exp-nav">Education</a>
                 <a href="#work-experience-div" id="work-exp" class="work-exp-nav">Work Experience</a>
+                <a href="#certifications" id="certif" class="work-exp-nav">Certifications</a>
                 <a href="#interests" id="interests" class="work-exp-nav">Interests</a>
             </div>
         </div>
@@ -229,6 +235,29 @@
                 </div>
             </div>
         </div>
+        <!--Cerfications-->
+        <div class="bgimg Work-Exp">
+            <div class="caption">
+                <b><span class="name">- Certifications -</span></b>
+            </div>
+        </div>
+        <!--Notes:
+        I think- I think this will eventually be rebuilt I can't think rn of another way to style this... like
+    it'll either look similar to the portfolio page or the work experience... I'm thinking right now of
+making it like the portfolio page but... we'll figure it out I'll build it like that for now-->
+        <div class="whiteDesc justify-content-center">
+            <h5 class="work-header">Professional Certifications</h5>
+            <hr class="break-line-2">
+            <!--Since I only have one this'll be center aligned and in a card-->
+            <!--Let's set a max width on this so it's not like- entirely stretched out-->
+            <!--Also yes I don't have this yet but I haven't taken the test yet so until then it stays-->
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Frog_on_palm_frond.jpg/1200px-Frog_on_palm_frond.jpg" class=".card-img-top certificate-img" />
+                <div class="card-body mb-3">
+                    <h5 class="card-title">Nocti</h5>
+                    <p class="card-text"> Date obtained: </p>
+                </div>
+            </div>
     </div>
     <!--This is not working great--->
     <script src="script.js"></script>
