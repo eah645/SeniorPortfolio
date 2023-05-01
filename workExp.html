@@ -78,14 +78,15 @@
     <!--So I think I'm gonna build a second navbar so remove class sticky from the first one and do a second
     one that'll link to each section- yes this page will be built similarly to parallax-->
     <!--Wait ok- idea- this could be a temporary solution build a second navbar that just looks like it's attached-->
-    <!--Alright we're good now please fucking center align-->
+    <!--Ok so now- let's be an asshole but not that bad let- just let me rebuild the navbar from crochet crew fuck it
+    I want the active class to change depending where you scroll to and I'll try to add transitions that work? Hopefully?-->
     <nav class="sticky-top work-nav justify-content-center">
         <div class="crew-nav">
             <!--So just my own notes on how to code this... for the buttons I wanna add
             it has to be like... scrollintoview onclick? When you click the button it'll
             scroll the other links into view and pick which one using ids?-->
             <div class="navcolor scrollmenu" id="navbar">
-                <a href="#education" id="education" class="work-exp-nav">Education</a>
+                <a href="#education-div" id="education" class="work-exp-nav">Education</a>
                 <a href="#work-experience-div" id="work-exp" class="work-exp-nav">Work Experience</a>
                 <a href="#certifications" id="certif" class="work-exp-nav">Certifications</a>
                 <a href="#interests" id="interests" class="work-exp-nav">Interests</a>
@@ -95,11 +96,13 @@
     <div class="container-fluid">
 
 <!--I'm gonna rebuild this section with everything being in separate rows-->
-<div class="bgimg Education">
-    <div class="caption">
-        <b><span class="name">- Education -</span></b>
+<section id="education-div">
+    <div class="bgimg Education">
+        <div class="caption">
+            <b><span class="name">- Education -</span></b>
+        </div>
     </div>
-</div>
+</section>
 <div class="whiteDesc justify-content-center">
     <h4>I am currently a high school senior going to attend Rutgers University
         starting in fall 2023, hoping to major in Information Technology and Informatics

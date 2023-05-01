@@ -38,11 +38,15 @@ h5 {
     margin: 20px;
     border-radius: 10px;
     align-items: center;
+    /*Uh- ok gonna leave this for now it does show it like- growing? When you first load the page / on reload
+    Only reason I really have this is because when you stop hovering it fades back and that only works with this*/
+    transition: 1s;
 }
 
 .header-links:hover {
-    background-color: #750808;
-    color: #E1E6E5;
+    background-color: #09181F;
+    color: #556972;
+    transition: 1s;
 }
 
 .header-img {
@@ -74,12 +78,14 @@ https://alvarotrigo.com/blog/animated-backgrounds-css/ */
 }
 
 /*This should apply to all except the first- I'll just make it so it doesn't have class active ok got it*/
+/*So ok if I remove this entire class then it works? Or- no*/
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
     color: #E1E6E5;
-    background-color: #09181f;
+    /*So just as a note the background-color makes the animation not work*/
+    border: none;
 }
 
 .nav-image {
@@ -146,6 +152,9 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     --shine-effect: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
     --shine-transition: all 0.65s ease-in-out;
 }
+/*So it's removing the nav-link.active class so... let me try changing this*/
+/*Wait- I deleted it just to check that was the issue- and it didn't fuck up anything else?*/
+/*Here's the code just to be safe-
 .nav-link.active {
     position: relative;
     overflow: hidden;
@@ -157,9 +166,11 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     color: var(--btn-text-color);
     background: var(--btn-bg);
 }
+
 .nav-link.active:not(:last-child) {
     margin-bottom: 3rem;
 }
+
 .nav-link.active::before {
     content: "";
     position: absolute;
@@ -167,14 +178,14 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     width: 100%;
     height: 100%;
     background: var(--shine-effect);
-}
+}*/
+
 .active-hover::before {
     left: -100%;
     transition: var(--shine-transition);
 }
-.active-hover:hover {
-    box-shadow: var(--btn-shadow);
-}
+/*Also deleted this
+*/
 .active-hover:hover::before {
     left: 100%;
 }
@@ -277,6 +288,11 @@ h2 {
     margin: 20px;
     padding: 10px;
     text-align: center;
+}
+
+.active-work-nav {
+    background-color: #09181F;
+    color: #556972;
 }
 
 .bgimg {
