@@ -85,7 +85,8 @@ https://alvarotrigo.com/blog/animated-backgrounds-css/ */
 .navbar-light .navbar-nav .show>.nav-link {
     color: #E1E6E5;
     /*So just as a note the background-color makes the animation not work*/
-    border: none;
+    border: 2px solid;
+    border-radius: 5px;
 }
 
 .nav-image {
@@ -114,6 +115,8 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     color: #E1E6E5;
     overflow: hidden;
     transition: color 1s;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .nav-link:hover {
@@ -185,7 +188,11 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     transition: var(--shine-transition);
 }
 /*Also deleted this
+.btn-hover:hover {
+    box-shadow: var(--btn-shadow);
+}
 */
+
 .active-hover:hover::before {
     left: 100%;
 }
@@ -234,6 +241,12 @@ h2 {
     height: auto;
     margin-top: 15px;
     overflow-x: scroll; /* Hide horizontal scrollbar */
+}
+
+a.workNav-active {
+    background-color: #09181F;
+    color: #556972;
+    border: 2px solid;
 }
 
 /*If I can eventually I'd like to customize the scroll bar- no idea if that's actually possible*/
@@ -288,6 +301,8 @@ h2 {
     margin: 20px;
     padding: 10px;
     text-align: center;
+    border: 2px solid;
+    border-color: #556972;
 }
 
 .active-work-nav {

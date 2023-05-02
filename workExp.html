@@ -53,11 +53,11 @@
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
                 <!--So I moved this out because I don't want it to close I want it to stay on mobile display- looks like it might work? Too early to tell-->
-                <b><a class="nav-link active active-hover active-anim" href="index.html">Home</a></b>
+                <b><a class="nav-link" href="index.html">Home</a></b>
             </li>
             <div class="collapse navbar-collapse col-md-4" id="myNavbarToggler13">
                 <li class="nav-item">
-                    <b><a class="nav-link" href="workExp.html">Work Experience</a></b>
+                    <b><a class="nav-link active active-hover active-anim" href="workExp.html">Work Experience</a></b>
                 </li>
                 <li class="nav-item">
                     <b><a class="nav-link" href="portfolio.html">Portfolio</a></b>
@@ -87,7 +87,7 @@
             scroll the other links into view and pick which one using ids?-->
             <div class="navcolor scrollmenu" id="navbar">
                 <a href="#education-div" id="education" class="work-exp-nav">Education</a>
-                <a href="#work-experience-div" id="work-exp" class="work-exp-nav">Work Experience</a>
+                <a href="#work-experience-div" id="work-exp" class="work-exp-nav" onclick="workExpScroll()">Work Experience</a>
                 <a href="#certifications" id="certif" class="work-exp-nav">Certifications</a>
                 <a href="#interests" id="interests" class="work-exp-nav">Interests</a>
             </div>
@@ -202,11 +202,13 @@
         <!--Notes:
         If I want to do a desktop and mobile layout (which as I'm building I might do- still deciding) then build two separate divs and turn them on/off-->
         <!--Desktop work history-->
+        <section id="work-experience-div">
         <div class="bgimg Work-Exp">
             <div class="caption">
                 <b><span class="name">- Work Experience -</span></b>
             </div>
-        </div>   
+        </div> 
+    </section>  
         <div class="whiteDesc justify-content-center">
             <div class="row">
                 <div class="col-lg-5">
@@ -239,11 +241,13 @@
             </div>
         </div>
         <!--Cerfications-->
+        <section id="certifications">
         <div class="bgimg Work-Exp">
             <div class="caption">
                 <b><span class="name">- Certifications -</span></b>
             </div>
         </div>
+    </section>
         <!--Notes:
         I think- I think this will eventually be rebuilt I can't think rn of another way to style this... like
     it'll either look similar to the portfolio page or the work experience... I'm thinking right now of
