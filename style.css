@@ -155,6 +155,7 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     --shine-effect: linear-gradient(var(--shine-degree), transparent, var(--shine-color), transparent);
     --shine-transition: all 0.65s ease-in-out;
 }
+
 /*So it's removing the nav-link.active class so... let me try changing this*/
 /*Wait- I deleted it just to check that was the issue- and it didn't fuck up anything else?*/
 /*Here's the code just to be safe-
@@ -187,6 +188,7 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     left: -100%;
     transition: var(--shine-transition);
 }
+
 /*Also deleted this
 .btn-hover:hover {
     box-shadow: var(--btn-shadow);
@@ -205,11 +207,13 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     0% {
         left: -100%;
         transition-property: left;
-   }
-    11.5044247788%, 100% {
+    }
+
+    11.5044247788%,
+    100% {
         left: 100%;
         transition-property: left;
-   }
+    }
 }
 
 /*Homepage*/
@@ -240,7 +244,8 @@ h2 {
     transition: background-color 0.5s;
     height: auto;
     margin-top: 15px;
-    overflow-x: scroll; /* Hide horizontal scrollbar */
+    overflow-x: scroll;
+    /* Hide horizontal scrollbar */
 }
 
 a.workNav-active {
@@ -260,17 +265,21 @@ a.workNav-active {
 /*This one's necessary for the customization idk why but ok*/
 #navbar::-webkit-scrollbar {
     width: 1px;
-  }
-  
-  #navbar::-webkit-scrollbar-track {
-    background: #09181F;        /* color of the tracking area */
-  }
-  
-  #navbar::-webkit-scrollbar-thumb {
-    background-color: #556972;    /* color of the scroll thumb */
-    border-radius: 10px;       /* roundness of the scroll thumb */
-    border: 3px solid #09181F;  /* creates padding around scroll thumb */
-  }
+}
+
+#navbar::-webkit-scrollbar-track {
+    background: #09181F;
+    /* color of the tracking area */
+}
+
+#navbar::-webkit-scrollbar-thumb {
+    background-color: #556972;
+    /* color of the scroll thumb */
+    border-radius: 10px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #09181F;
+    /* creates padding around scroll thumb */
+}
 
 /*Ok so plan is write a function that adds this class as soon as you scroll so it FUCKING STAYS*/
 /*...change it to a fucking id*/
@@ -312,26 +321,26 @@ a.workNav-active {
 
 .bgimg {
     position: relative;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("https://media.istockphoto.com/id/1313302904/vector/blue-bird-feather-icon-decorative-design-element-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=F_UWic3Y8QdxWFpT3VWxS07mkFLFnU6dUT7eSQhVoPg=");
-        min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://media.istockphoto.com/id/1313302904/vector/blue-bird-feather-icon-decorative-design-element-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=F_UWic3Y8QdxWFpT3VWxS07mkFLFnU6dUT7eSQhVoPg=");
+    min-height: 400px;
 }
 
 .caption {
     position: absolute;
-        left: 0;
-        top: 50%;
-        width: 100%;
-        text-align: center;
-        /*May change color- It'll be a darker picture with a blue feather because that looks cool
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    /*May change color- It'll be a darker picture with a blue feather because that looks cool
         so... filler color will be the dark blue*/
-        color: #09181F;
-        font-family: 'Courier New';
-        font-size: 33px;
-        
+    color: #09181F;
+    font-family: 'Courier New';
+    font-size: 33px;
+
 }
 
 .whiteDesc {
@@ -339,12 +348,12 @@ a.workNav-active {
     background-color: #556972;
     text-align: center;
     padding: 50px 80px;
-   font-family: 'Lato';
-   /*Deciding if I wanna keep this- if I do I need to add it to all pages*/
+    font-family: 'Lato';
+    /*Deciding if I wanna keep this- if I do I need to add it to all pages*/
     font-variant: small-caps;
-  }
+}
 
-  .break-line-2 {
+.break-line-2 {
     background-color: #09181F;
     margin-left: 0px;
     margin-right: 0px;
@@ -450,7 +459,7 @@ a.workNav-active {
 }
 
 .work-total-desc {
-    border:1px solid black;
+    border: 1px solid black;
     margin-top: 45px;
     margin-left: 50px;
 }
@@ -525,18 +534,18 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
 /*Portfolio stuff*/
 .webContent {
     display: none;
-  }
-  
-  .artContent {
-    display: none;
-  }
+}
 
-  .portfolio-button-row {
+.artContent {
+    display: none;
+}
+
+.portfolio-button-row {
     display: flex;
     justify-content: center;
-  }
-  
-  .portfolio-buttons {
+}
+
+.portfolio-buttons {
     margin-left: 20px;
     margin-top: 20px;
     border: 2px solid;
@@ -545,132 +554,139 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
     color: #E1E6E5;
     padding: 25px;
     transition: 1s;
-  }
+}
 
-  .portfolio-buttons:hover {
+.portfolio-buttons:hover {
     background-color: #556972;
     color: #E1E6E5;
     border: 2px solid;
     border-radius: 10px;
     padding: 25px;
     transition: 1s;
-  }
-  
-  .portfolio-active {
+}
+
+.portfolio-active {
     background-color: #556972;
     color: #E1E6E5;
     border: 2px solid;
     border-radius: 10px;
     padding: 25px;
-  }
+}
 
-  .feature-list {
+.feature-list {
     list-style-type: none;
     text-align: left;
-  }
+}
 
-  .web-card-body {
+.web-card-body {
     background-color: #556972;
-  }
+}
 
-  .web-btns {
+.web-btns {
     background-color: #09181F;
     border: 2px solid;
     border-color: #09181F;
     margin: 5px;
-  }
+}
 
-  .web-btns-transition {
+.web-btns-transition {
     background-color: #09181F;
     border-color: #09181F;
     transition: 2s;
-  }
+}
 
-  .web-btns:hover {
+.web-btns:hover {
     background-color: #556972;
     border: 2px solid;
     border-color: #E1E6E5;
     transition: 2s;
-  }
+}
 
 /*So... I'd like this to cut across the entire top but it's not working yet...*/
-  .card-text {
+.card-text {
     border: 1px solid;
     border-color: #09181F;
-  }
-  
-  /*Add border I think- I think it'd make them look better*/
-  .json-images {
+}
+
+/*Add border I think- I think it'd make them look better*/
+.json-images {
     max-height: 500px;
     max-width: 500px;
     margin: 15px;
-  }
-  
-  .images-div {
+}
+
+.images-div {
     display: inline-block;
-  }
-  
-  .artPopup {
+}
+
+.artPopup {
     background-color: #e1e6e5;
     display: block;
     /*How long do you wanna bet center aligning it will take*/
     /*I broke it like 3 times nice- I took a video it looked so broken*/
     /*Justify content doesn't work, align-content: center doesn't work... align-items doesn't work...*/
     /*Holy shit this kinda works- all the popups are overlapped which isn't good but it is center aligned*/
-  /*   position: fixed;
+    /*   position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 50%; */
-  }
-  
-  .artPopupHeader {
+}
+
+.artPopupHeader {
     color: black;
-  }
-  
-  /*Feature vue thing*/
-  
-  .feature-row {
+}
+
+/*Feature vue thing*/
+
+.feature-row {
     text-align: vertical;
-  }
-  
-  .feature-background {
-    background-color: #e1e6e5;
-    display: inline-block;
-    vertical-align: middle;
-    margin: auto;
-    margin-top: 50px;
-    min-height: 250px;
-  }
-  
-  /*I'll set it so it's the size of the screenshot which... I'll edit later*/
-  .feature-image {
-    background-color: cyan;
-    min-height: 50px;
-    float: left;
-    width: 45%;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  
-  .feature-text {
-    background-color: yellow;
-    min-height: 50px;
-    float: right;
-    width: 50%;
-    margin-top: 25px;
-  }
-  
-  /*Holy shit this is the animation I want- at least like the not as complicated part of having the projects fade in let's go- gotta install it but look- it's FadeInDown
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+/*Holy shit this is the animation I want- at least like the not as complicated part of having the projects fade in let's go- gotta install it but look- it's FadeInDown
   https://animate.style/  */
-  /*Holy shit use the delay classes use them use them to time it right*/
-  /*...the other animation is slideOutDown. That-that's what it is I just need to give it a stopping point / beginning and end point*/
-  
-  
-  /*Use this to- let's try and do a fade in
+/*Holy shit use the delay classes use them use them to time it right*/
+/*...the other animation is slideOutDown. That-that's what it is I just need to give it a stopping point / beginning and end point*/
+
+
+/*Use this to- let's try and do a fade in
   https://blog.hubspot.com/website/css-fade-in#:~:text=In%20the%20CSS%2C%20use%20the,creates%20the%20fade%2Din%20effect.   */
-  
-  
+
+
 
 
 /*Contact*/
@@ -780,9 +796,9 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-  /*I'm gonna swap the background to be a phoenix (which I need to draw but leave that for later) for now gonna do a filler background*/
+/*I'm gonna swap the background to be a phoenix (which I need to draw but leave that for later) for now gonna do a filler background*/
 .background {
     background: url("https://i.pinimg.com/736x/17/66/a2/1766a262565c6dc53f39ed9e96ee55c7--art-addiction-phoenix.jpg") no-repeat fixed 0 0 / cover;
 }
@@ -839,7 +855,7 @@ footer {
 }
 
 /*I want this to be center aligned vertically fix it*/
-.left-footer-text{
+.left-footer-text {
     vertical-align: middle;
 }
 

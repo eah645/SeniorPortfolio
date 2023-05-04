@@ -1,0 +1,13 @@
+[
+    {  
+      "year": "3",
+      "webImg": "#",
+      "webTitle": "Crochet Crew",
+      "webDesc": "Active page built for the Crochet Club at Marlboro High School",
+      "BonusDesc": "Collab with Chloe Lee and Rohan Shivlani",
+      "CreditDesc": "Work done on the page:",
+      "CreditArray": ["Built original header", "Positioned mouse scroll animation and text properly", "Made header and navbar fit view height at different sizes", "Made navbar switch color on click and when scrolling into the next section", "Built tutorials and organization section"],
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    }
+]
