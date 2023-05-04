@@ -530,17 +530,73 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
   .artContent {
     display: none;
   }
+
+  .portfolio-button-row {
+    display: flex;
+    justify-content: center;
+  }
   
   .portfolio-buttons {
     margin-left: 20px;
     margin-top: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: #09181F;
+    color: #E1E6E5;
+    padding: 25px;
+    transition: 1s;
+  }
+
+  .portfolio-buttons:hover {
+    background-color: #556972;
+    color: #E1E6E5;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 25px;
+    transition: 1s;
   }
   
   .portfolio-active {
     background-color: #556972;
-    color: white;
-    /*Need to fix alignment with this- probably padding or something*/
-    box-shadow: 5px 0px 5px 5px #750808;
+    color: #E1E6E5;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 25px;
+  }
+
+  .feature-list {
+    list-style-type: none;
+    text-align: left;
+  }
+
+  .web-card-body {
+    background-color: #556972;
+  }
+
+  .web-btns {
+    background-color: #09181F;
+    border: 2px solid;
+    border-color: #09181F;
+    margin: 5px;
+  }
+
+  .web-btns-transition {
+    background-color: #09181F;
+    border-color: #09181F;
+    transition: 2s;
+  }
+
+  .web-btns:hover {
+    background-color: #556972;
+    border: 2px solid;
+    border-color: #E1E6E5;
+    transition: 2s;
+  }
+
+/*So... I'd like this to cut across the entire top but it's not working yet...*/
+  .card-text {
+    border: 1px solid;
+    border-color: #09181F;
   }
   
   /*Add border I think- I think it'd make them look better*/
@@ -759,7 +815,37 @@ footer {
     margin-top: 10px;
 }
 
+.socials {
+    background-color: #E1E6E5;
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+    border-radius: 20%;
+    border: 2px solid;
+    color: #556972;
+    transition: 0.5s;
+}
 
+.socials:hover {
+    background-color: #556972;
+    border-color: #E1E6E5;
+    color: #E1E6E5;
+    transition: 0.5s;
+}
+
+.footer-text {
+    font-size: 25px;
+}
+
+/*I want this to be center aligned vertically fix it*/
+.left-footer-text{
+    vertical-align: middle;
+}
+
+.beRound {
+    padding: 10px;
+}
 
 
 /*Hopefully stuff for every page*/

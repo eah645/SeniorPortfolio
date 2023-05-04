@@ -1,31 +1,15 @@
 [
     {  
       "year": "1",
-      "webImg": "#",
+      "webImg": "images/Web images/first-homepage-image.jpg",
       "webTitle": "First Homepage",
       "webDesc": "First homepage I created using HTML and CSS",
       "SiteLink": "#buttonlinktowebsite",
       "CodeLink": "#buttonlinktocode"
     },
-    {  
-      "year": "1",
-      "webImg": "#",
-      "webTitle": "Career Website",
-      "webDesc": "Describes a potential career in animation",
-      "SiteLink": "#buttonlinktowebsite",
-      "CodeLink": "#buttonlinktocode"
-    },
-    {  
-      "year": "1",
-      "webImg": "#",
-      "webTitle": "Aesop's Morals",
-      "webDesc": "Website with animations about Aesop's morals",
-      "SiteLink": "#buttonlinktowebsite",
-      "CodeLink": "#buttonlinktocode"
-    },
   {  
       "year": "1",
-      "webImg": "#",
+      "webImg": "images/Web images/photo-gallery-image.jpg",
       "webTitle": "Photo Gallery",
       "webDesc": "Photo gallery with prices and contact options",
       "SiteLink": "#buttonlinktowebsite",
@@ -33,7 +17,7 @@
     },
   {  
       "year": "1",
-      "webImg": "#",
+      "webImg": "images/Web images/first-portfolio-image.jpg",
       "webTitle": "First Portfolio",
       "webDesc": "First portfolio I made using HTML and CSS",
       "SiteLink": "#buttonlinktowebsite",
@@ -41,7 +25,7 @@
     },
   {  
       "year": "1",
-      "webImg": "#",
+      "webImg": "images/Web images/xbox-vs-ps4-image.jpg",
       "webTitle": "Xbox vs PS4",
       "webDesc": "Website that compares Xbox and PS4",
       "bonusDesc": "Collab with Chloe Lee and Griffin ZeidenWeber",
@@ -49,16 +33,8 @@
       "CodeLink": "#buttonlinktocode"
     },
   {  
-      "year": "1",
-      "webImg": "#",
-      "webTitle": "Ace Attorney: Justice for All",
-      "webDesc": "Website with a walkthrough of Ace Attorney: Justice for All",
-      "SiteLink": "#buttonlinktowebsite",
-      "CodeLink": "#buttonlinktocode"
-    },
-  {  
       "year": "2",
-      "webImg": "#",
+      "webImg": "images/Web images/dad-joke-image.jpg",
       "webTitle": "Dad Joke",
       "webDesc": "Website built with JavaScript to tell dad jokes",
       "SiteLink": "#buttonlinktowebsite",
@@ -66,7 +42,7 @@
     },
   {  
       "year": "2",
-      "webImg": "#",
+      "webImg": "images/Web images/spooky-ghost-image.jpg",
       "webTitle": "Spooky Ghost",
       "webDesc": "Website with an animation of a spooky ghost for Halloween 2022",
       "SiteLink": "#buttonlinktowebsite",
@@ -74,7 +50,7 @@
     },
   {  
       "year": "2",
-      "webImg": "#",
+      "webImg": "images/Web images/quote-image.jpg",
       "webTitle": "Quote",
       "webDesc": "Website built based off a quote from Sherlock Holmes",
       "SiteLink": "#buttonlinktowebsite",
@@ -82,7 +58,7 @@
     },
   {  
       "year": "2",
-      "webImg": "#",
+      "webImg": "images/Web images/chocolate-image.jpg",
       "webTitle": "Chocolate",
       "webDesc": "Website built about chocolate and how it's made",
       "SiteLink": "#buttonlinktowebsite",
@@ -90,47 +66,7 @@
     },
   {  
       "year": "2",
-      "webImg": "#",
-      "webTitle": "Hero",
-      "webDesc": "Website built with a hero image to describe who my hero is",
-      "SiteLink": "#buttonlinktowebsite",
-      "CodeLink": "#buttonlinktocode"
-    },
-  {  
-      "year": "2",
-      "webImg": "#",
-      "webTitle": "Thankfulness",
-      "webDesc": "Website with a slideshow that states what I'm thankful for",
-      "SiteLink": "#buttonlinktowebsite",
-      "CodeLink": "#buttonlinktocode"
-    },
-  {  
-      "year": "2",
-      "webImg": "#",
-      "webTitle": "JavaScript Fields",
-      "webDesc": "Website built with JavaScript with a working text form",
-      "SiteLink": "#buttonlinktowebsite",
-      "CodeLink": "#buttonlinktocode"
-    },
-  {  
-      "year": "2",
-      "webImg": "#",
-      "webTitle": "Party Invite",
-      "webDesc": "Invitation to a graduation party with a functioning JavaScript form",
-      "SiteLink": "#buttonlinktowebsite",
-      "CodeLink": "#buttonlinktocode"
-    },
-  {  
-      "year": "2",
-      "webImg": "#",
-      "webTitle": "Accordion",
-      "webDesc": "Website built with JavaScript to open and close text on the page",
-      "SiteLink": "#buttonlinktowebsite",
-      "CodeLink": "#buttonlinktocode"
-    },
-  {  
-      "year": "2",
-      "webImg": "#",
+      "webImg": "images/Web images/random-testimonial-image.jpg",
       "webTitle": "Random Testimonial",
       "webDesc": "Website with random changing statements made using JavaScript",
       "SiteLink": "#buttonlinktowebsite",
@@ -138,7 +74,7 @@
     },
   {  
       "year": "2",
-      "webImg": "#",
+      "webImg": "images/Web images/postcard-generator-image.jpg",
       "webTitle": "Postcard Generator",
       "webDesc": "Javascript website made to generate postcards from different states",
       "SiteLink": "#buttonlinktowebsite",
@@ -146,7 +82,7 @@
     },
   {  
       "year": "2",
-      "webImg": "#",
+      "webImg": "images/Web images/little-bird-toy-company-image.jpg",
       "webTitle": "Little Bird Toy Company",
       "webDesc": "Website for the Little Bird Toy Company",
       "bonusDesc": "Collab with Julia Kong",
@@ -155,7 +91,7 @@
     },
     {  
       "year": "2",
-      "webImg": "#",
+      "webImg": "images/Web images/tip-calculator-image.jpg",
       "webTitle": "Tip Calculator",
       "webDesc": "Fully operating tip calculator built using JavaScript",
       "SiteLink": "#buttonlinktowebsite",
@@ -163,7 +99,7 @@
     },
     {  
       "year": "2",
-      "webImg": "#",
+      "webImg": "images/Web images/state-facts-image.jpg",
       "webTitle": "State Facts",
       "webDesc": "Website built with JavaScript to select a state and be given facts on it",
       "SiteLink": "#buttonlinktowebsite",
@@ -171,15 +107,7 @@
     },
     {  
       "year": "2",
-      "webImg": "#",
-      "webTitle": "Volunteer Form",
-      "webDesc": "Volunteer form for Helping Hands Volunteer Aplication",
-      "SiteLink": "#buttonlinktowebsite",
-      "CodeLink": "#buttonlinktocode"
-    },
-    {  
-      "year": "2",
-      "webImg": "#",
+      "webImg": "images/Web images/rock-paper-scissors-image.jpg",
       "webTitle": "Rock Paper Scissors",
       "webDesc": "Playable game of rock-paper-scissors made using JavaScript",
       "SiteLink": "#buttonlinktowebsite",
@@ -195,18 +123,10 @@
     },
   {  
       "year": "2",
-      "webImg": "#",
+      "webImg": "images/Web images/katies-komets-image.jpg",
       "webTitle": "Katie's Komets",
       "webDesc": "Website built for the Katie's Komets organization",
     "bonusDesc": "Collab with Julia Kong",
-      "SiteLink": "#buttonlinktowebsite",
-      "CodeLink": "#buttonlinktocode"
-    },
-  {  
-      "year": "3",
-      "webImg": "#",
-      "webTitle": "Bootstrap Refresher",
-      "webDesc": "Refresher website built to practice using Bootstrap",
       "SiteLink": "#buttonlinktowebsite",
       "CodeLink": "#buttonlinktocode"
     },
@@ -242,6 +162,14 @@
       "webImg": "#",
       "webTitle": "NJIT-2: Slideshow",
       "webDesc": "NJIT project which has a functioning slideshow showing off art projects",
+      "SiteLink": "#buttonlinktowebsite",
+      "CodeLink": "#buttonlinktocode"
+    },
+    {  
+      "year": "3",
+      "webImg": "#",
+      "webTitle": "NJIT-3: IMDB Top Movies",
+      "webDesc": "NJIT project which shows off top movies, different images on click, and interactive ratings",
       "SiteLink": "#buttonlinktowebsite",
       "CodeLink": "#buttonlinktocode"
     }

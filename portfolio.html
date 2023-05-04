@@ -78,16 +78,17 @@
   </nav>
   <div class="container-fluid">
     <!--Testing the scroll to function here like when you click return to top its here- decide later if im keeping that-->
-    <div class="row">
-      <button class="portfolio-buttons" id="btn" onclick="showWeb()">Web Design</button>
-      <button class="portfolio-buttons" id="artBtn" onclick="showArt()">Art</button>
+    <div class="row portfolio-button-row">
+      <a href="#" class="portfolio-buttons" id="btn" onclick="showWeb()">Web Design</a>
+      <a href="#" class="portfolio-buttons" id="artBtn" onclick="showArt()">Art</a>
     </div>
     <div class="webContent" id="webStuff">
+      <br>
       <!--I'm gonna build my idea for this in html / css first- it's the idea for "feature pages" let's do that-->
       <!--This is gonna need it's own class of hidden because... actually no it's the second part-->
       <h2>Feature Pages</h2>
       <!--Writing out my thoughts because fuck it- I think I start with one hr then add an id tag, go into javascript and say on scroll add another hr line and have the animation continue on that- that might be hard I also might not need to add the line and could just add it at the end but it might look slightly weird if scrolled by too quickly- Alright let's do that last for now let's add an id and say on scroll make it start having a cool glow effect and reveal text-->
-      <hr class="feature-line">
+      <hr class="break-line">
       <!--Onscroll doesn't work... onfocus doesn't work... onkeyup didn't work but didn't expect it to...-->
       <!--Here's the classes for the basic hover if this stuff doesn't work animate__animated animate__fadeInDown-->
       <div class="overlay__bar animate__animated animate__fadeInDown" id="ScrollOpenAnimation">
@@ -115,16 +116,16 @@
           <!--Wait ok this is progress- I might not be able to use v-for so need an alternative or something... I want it work automatically when it's called so how-->
           <!--The error has to be where I'm calling the makeNewRow function-->
           <h2> {{ title }} </h2>
-          <hr class="feature-line">
+          <hr class="break-line">
           <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 text-center" v-for="(website, i) in websites"> {{ makeNewRow(i) }}
               <div class="card">
                 <img :src="websites[i].webImg" class=".card-img-top" />
-                <div class="card-body mb-3">
+                <div class="card-body web-card-body mb-3">
                   <h5 class="card-title"> {{ websites[i].webTitle }}</h5>
                   <p class="card-text"> {{ websites[i].webDesc }} </p>
-                  <a href="" class="btn btn-primary btn-left">Visit Page</a>
-                  <a href="" class="btn btn-primary btn-right">See Code</a>
+                  <a href="" class="btn btn-primary btn-left web-btns web-btns-transition">Visit Page</a>
+                  <a href="" class="btn btn-primary btn-right web-btns web-btns-transition">See Code</a>
                 </div>
               </div>
             </div>
