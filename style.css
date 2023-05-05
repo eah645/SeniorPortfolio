@@ -6,6 +6,7 @@ html {
 
 body {
     background-color: #09181F;
+    overflow-x: hidden;
 }
 
 /*Header stuff (Includes the hello, intro text, image, and buttons*/
@@ -14,21 +15,28 @@ header {
 }
 
 /*Ok all of this I'm using px until I can figure out how to make text size responsive because I just wanna lay out the pages rn*/
+/*Ok somehow- fucking view height = responsive size-
+I mean that makes sense but what the hell*/
 h1 {
-    font-size: 115px;
+    font-size: 9vh;
     color: #E1E6E5;
     font-family: 'Courier New';
 }
 
 h5 {
-    font-size: 40px;
+    font-size: 5vh;
     color: #E1E6E5;
     font-family: 'Lato';
     /*Idk if this is applying*/
     font-style: bold;
 }
 
+.btn-header {
+    display: inline-block;
+}
+
 /*...I can't center align these fuck- fix it later*/
+/*Alright now I can't fix these on mobile- this isn't a big deal for the portfolio presentation but I'll fix it eventually*/
 .header-links {
     background-color: #556972;
     color: #E1E6E5;
@@ -39,8 +47,11 @@ h5 {
     margin: 20px;
     border-radius: 10px;
     align-items: center;
-    /*Uh- ok gonna leave this for now it does show it like- growing? When you first load the page / on reload
-    Only reason I really have this is because when you stop hovering it fades back and that only works with this*/
+}
+
+.header-links-transition {
+    background-color: #556972;
+    color: #E1E6E5;
     transition: 1s;
 }
 
@@ -52,7 +63,9 @@ h5 {
 
 .header-img {
     display: block;
-    max-width: 250px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     padding-top: 30px;
     /*How do I fucking center align this :)*/
     margin-left: auto;
@@ -63,7 +76,10 @@ h5 {
 https://alvarotrigo.com/blog/animated-backgrounds-css/ */
 
 /*Navbar*/
-/*I have no fucking idea where the hover effect is coming from*/
+nav {
+    overflow-x: hidden;
+}
+
 .navbar .navbar-nav .nav-link {
     font-size: 25px;
     padding-left: 40px;
@@ -259,9 +275,6 @@ a.workNav-active {
 /*...shit I need this to only show up if there's too many items- which means basically only on mobile*/
 /*Alright no on mobile this just needs to always be visible- maybe do like a fade in on load or something idk*/
 /*Alright so rn this does nothing and I'll just always have it on so it doesn't keep changing size when you hover*/
-#navbar:hover {
-    overflow-x: scroll;
-}
 
 /*This one's necessary for the customization idk why but ok*/
 #navbar::-webkit-scrollbar {
@@ -390,7 +403,8 @@ a.workNav-active {
 /*Credit: https://www.youtube.com/watch?v=8ULg-7SvP2o*/
 .progress-bar {
     background: #959595;
-    width: 300px;
+    width: 40vw;
+    max-width: 400px;
     height: 10px;
     border-radius: 5px;
     margin-top: 50px;
