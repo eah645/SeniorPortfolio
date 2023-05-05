@@ -1,6 +1,5 @@
 //Alright fuck it time to try making this work- so what I wanna do: Make a card with two buttons that bring in the data- let's do just from the first JSON object
 
-
 //I commented everything so go to history to get it or just uncomment it idk- right now I just need this to work
 
 //Function to make web design visible
@@ -40,6 +39,28 @@ function backToTop() {
   });
 }
 
+//Building another one for feature pages...
+//Holy shit wait can you not have two vue files- inside each other I mean-
+//Fuck... fuck ok for now we'll just code it without vue.. fuck
+// const vue_app1 = Vue.createApp({
+//   created() {
+//     fetch("JSON/featureWeb.json")
+//       .then((response) => response.json())
+//       .then((json) => {
+//         this.featureWebsites = json;
+//       });
+//   },
+//   data() {
+//     return {
+//       featureWebsites: [],
+//     };
+//   }
+// });
+
+// vue_app1.mount("#vue_app1");
+
+
+
 //Alright so this is working with vue- this created does nothing-
 //So this vue is for all projects that-that's it
 const vue_app = Vue.createApp({
@@ -58,8 +79,8 @@ const vue_app = Vue.createApp({
   data() {
     return {
       websites: [],
-      title: "All Projects"
-    }
+      title: "All Projects",
+    };
   },
   methods: {
     //It's defined now :) ...no the function still doesn't work it's only showing up as false so there's an issue with the condition in the if statement?
@@ -67,19 +88,20 @@ const vue_app = Vue.createApp({
     //Holy shit it actually does work I just need to make the columns respond to this... how
     makeNewRow(i) {
       if ((i + 1) % 4 == 0) {
-        console.log('true')
-        $('#content').append("</div><div class='row'>");
+        console.log("true");
+        $("#content").append("</div><div class='row'>");
       } else {
-        console.log('false')
+        console.log("false");
       }
-    }
+    },
     //https://stackoverflow.com/questions/45724291/using-bootstrap-and-java-script-how-do-i-insert-several-columns-in-a-row-using-f
     //Slightly off topic but I want to have like- could I use case / break thing to call different objects based on year using .filter() ? This might just be an art thing since it might actually be cooler in web to just do them all together so you can see how it evolved
     //I think for now I'm gonna... uh... here I'll make it in separate json files for now and see if I can transition it in because idk how to use filter
-  }
+  },
 });
 
 vue_app.mount("#vue_app");
+
 
 //Code for the css animation... idk how this'll go but it could look really cool if I can pull it off
 //Ok for some reason writing this function breaks everything what the fuck-
@@ -179,3 +201,25 @@ const observer = new IntersectionObserver((entries) => {
     }
   })
 });
+
+
+//Back to Top button portfolio
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
