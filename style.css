@@ -9,6 +9,124 @@ body {
     overflow-x: hidden;
 }
 
+.testHead {
+    display: none;
+}
+
+.not-loading-initial {
+    opacity: 0%;
+    transition: 1s;
+}
+
+.not-loading-final {
+    visibility: visible;
+    opacity: 100%;
+    transition: 1s;
+    overflow: scroll;
+    overflow-y: visible;
+}
+
+/*Loading*/
+#loading {
+    background-color: #09181F;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.loading-initial {
+    display: visible;
+}
+
+.loading-final {
+    display: none;
+}
+
+.work {
+    height: 82vh;
+    display: grid;
+    place-items: center;
+}
+
+/*Ok I need you to be responsive*/
+/*Ok wait so- this class isn't working*/
+/*That's so dumb you can't do it through the class on the image*/
+.work img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    height: auto;
+}
+
+.loadingText {
+    height: 30vh;
+    color: white;
+    font-family: 'Lato';
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 0;
+    letter-spacing: 8px;
+    transition: 1s;
+}
+
+h3 {
+    height: 30vh;
+    color: white;
+    font-family: 'Lato';
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 0;
+    letter-spacing: 8px;
+    transition: 1s;
+}
+
+.break-line {
+    background-color: #556972;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-height: 2px;
+    z-index: 10000px;
+    border: none;
+    transition: 1s;
+}
+
+/*Testing js functions*/
+.testLoadingLogo {
+    opacity: 0%;
+    transition: 1.5s;
+}
+
+.testLoadingLogo-1 {
+    opacity: 100%;
+    transition: 1.5s;
+}
+
+/*So I need to... I need to position the text below the screen so let's just add a ton of top spacing then remove the class so hopefully it fades up?*/
+.testLoadingText {
+    height: 30vh;
+    color: white;
+    font-family: 'Lato';
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 500px;
+    letter-spacing: 8px;
+    transition: 1s;
+}
+
+.testBreakLine {
+    background-color: #556972;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-height: 2px;
+    z-index: 10000px;
+    margin-top: 500px;
+    border: none;
+    transition: 1s;
+}
+
+
 /*Header stuff (Includes the hello, intro text, image, and buttons*/
 header {
     margin: 50px;
@@ -18,13 +136,13 @@ header {
 /*Ok somehow- fucking view height = responsive size-
 I mean that makes sense but what the hell*/
 h1 {
-    font-size: 9vh;
+    font-size: 9vw;
     color: #E1E6E5;
     font-family: 'Courier New';
 }
 
 h5 {
-    font-size: 5vh;
+    font-size: 3.5vw;
     color: #E1E6E5;
     font-family: 'Lato';
     /*Idk if this is applying*/
