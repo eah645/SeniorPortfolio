@@ -90,6 +90,18 @@ h3 {
     transition: 1s;
 }
 
+#header-break-line {
+    width: 100vw;
+    margin-left: none;
+}
+
+@media only screen and (min-width: 500px) {
+    #header-break-line {
+        width: 100vw;
+            margin-left: none;
+    }
+}
+
 /*Testing js functions*/
 .testLoadingLogo {
     opacity: 0%;
@@ -188,13 +200,12 @@ h5 {
     margin-right: auto;
 }
 
-.header-img
-{
+.header-img {
     display: none;
 }
+
 @media only screen and (min-width: 500px) {
-    .header-img
-    {
+    .header-img {
         display: block;
     }
 }
@@ -367,7 +378,7 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     color: #E1E6E5;
     padding: 20px;
     font-family: 'Lato';
-    font-size: 20px;
+    font-size: 3vh;
 }
 
 h2 {
@@ -984,12 +995,12 @@ footer {
 .footer-text {
     font-size: 30px;
     display: flex;
-        width: 50%;
-        height: 200px;
-        margin: auto;
-        align-items:center;
-        justify-content:center;
-        font-family: 'Lato';
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
 }
 
 .new-footer-text {
