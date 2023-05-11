@@ -91,8 +91,9 @@ h3 {
 }
 
 #header-break-line {
-    width: 100vw;
-    margin-left: none;
+    width: 75vw;
+    margin-left: 0px;
+    border-color: #556972;
 }
 
 /*Testing js functions*/
@@ -149,6 +150,11 @@ h5 {
     font-style: bold;
 }
 
+h2 {
+    font-size: 5vh;
+    margin: 25px;
+}
+
 .btn-header {
     display: inline-block;
 }
@@ -200,13 +206,22 @@ h5 {
     }
 }
 
-/*Prevents the original header from showing up on mobile*/
 .desktop-header {
-    display: none;
+    height: 77vh;
 }
 
-@media only screen and (min-width: 500px) {
+.mobile-header {
+    height: 66vh;
+}
+
+@media (max-width: 600px) {
     .desktop-header {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) {
+    .mobile-header {
         display: none;
     }
 }
@@ -220,13 +235,19 @@ nav {
 }
 
 .navbar .navbar-nav .nav-link {
-    font-size: 25px;
+    font-size: 2.5vw;
     padding-left: 40px;
     padding-right: 40px;
     font-family: 'Courier New';
     color: #E1E6E5;
     white-space: nowrap;
     overflow: hidden;
+}
+
+@media (max-width: 500px) {
+    .navbar .navbar-nav .nav-link {
+        font-size: 5vw;
+    }
 }
 
 .navbar {
@@ -387,6 +408,9 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     .intro-paragraph {
         padding: 0px;
         font-size: 2.25vh;
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -404,6 +428,36 @@ h2 {
 .img-carousel {
     max-height: 400px;
     max-width: 800px;
+}
+
+@media (max-width: 774px) {
+    .img-carousel {
+        max-width: 100%;
+        /*Ok the image just... keeps changing it's only an issue on mobile layout*/
+        max-height: 100%;
+    }
+}
+
+@media (min-width: 775px) {
+    .carousel {
+            width: 50vw;
+            margin-left: auto;
+            margin-right: auto;
+            align-content: center;
+            border: 2px solid;
+            border-color: #E1E6E5;
+            transition: 1s;
+        }
+        .carousel:hover {
+            box-shadow: 10px 5px 5px #E1E6E5;
+        }
+}
+
+/*Ok issue with this it's cropping out the ends of the images- it's probably something like set the images to 100% width?*/
+.carousel {
+    align-content: center;
+    border: 0.5px solid;
+    border-color: #E1E6E5;
 }
 
 /*Work Experience*/
@@ -701,6 +755,16 @@ a.workNav-active {
 https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
 
 /*Portfolio stuff*/
+
+.portfolio-popup {
+    color: #E1E6E5;
+    text-align: center;
+    font-size: 2.5vh;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family: 'Lato';
+}
+
 .webContent {
     display: none;
 }

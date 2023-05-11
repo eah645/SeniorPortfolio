@@ -10,6 +10,7 @@ var websiteContent = document.getElementById("webStuff");
 var drawContent = document.getElementById("artStuff");
 var webButton = document.getElementById("btn");
 var artButton = document.getElementById("artBtn");
+var aPortfolio = document.getElementById("popup-portfolio");
 
 //Let's fucking go both of these work- all I need to do now is basically finish up the art section which... requires me to download files
 function showWeb() {
@@ -17,6 +18,7 @@ function showWeb() {
   drawContent.classList.add("artContent");
   webButton.classList.add("portfolio-active");
   artButton.classList.remove("portfolio-active");
+  aPortfolio.style.visibility = "hidden";
 }
 
 //I think replit's breaking when I highlight it it says artisticContent isn't defined but I deleted that already?
