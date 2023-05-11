@@ -95,13 +95,6 @@ h3 {
     margin-left: none;
 }
 
-@media only screen and (min-width: 500px) {
-    #header-break-line {
-        width: 100vw;
-            margin-left: none;
-    }
-}
-
 /*Testing js functions*/
 .testLoadingLogo {
     opacity: 0%;
@@ -142,9 +135,6 @@ header {
     margin: 50px;
 }
 
-/*Ok all of this I'm using px until I can figure out how to make text size responsive because I just wanna lay out the pages rn*/
-/*Ok somehow- fucking view height = responsive size-
-I mean that makes sense but what the hell*/
 h1 {
     font-size: 9vw;
     color: #E1E6E5;
@@ -210,6 +200,16 @@ h5 {
     }
 }
 
+/*Prevents the original header from showing up on mobile*/
+.desktop-header {
+    display: none;
+}
+
+@media only screen and (min-width: 500px) {
+    .desktop-header {
+        display: none;
+    }
+}
 
 /*Background image idea- just to make it somewhat animated / interesting this'd only be on the top part
 https://alvarotrigo.com/blog/animated-backgrounds-css/ */
@@ -378,7 +378,22 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     color: #E1E6E5;
     padding: 20px;
     font-family: 'Lato';
-    font-size: 3vh;
+    /*See I would keep it like this because looks great on pc- impossible to read on mobile-*/
+    /*I need to get rid of the margin on pc lol*/
+    font-size: 1.75vw;
+}
+
+@media (max-width: 500px) {
+    .intro-paragraph {
+        padding: 0px;
+        font-size: 2.25vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .img-thumbnail {
+        height: 15vh;
+    }
 }
 
 h2 {
