@@ -468,8 +468,14 @@ h2 {
     background-color: #09181F;
     transition: background-color 0.5s;
     height: auto;
-    margin-top: 15px;
     overflow-x: scroll;
+    font-size: 2.5vw;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Courier New';
+    color: #E1E6E5;
+    white-space: nowrap;
+    overflow: hidden;
     /* Hide horizontal scrollbar */
 }
 
@@ -749,7 +755,13 @@ a.workNav-active {
     transition: all 0.5s;
 }
 
+.certif-cards {
+    margin: 10px;
+}
 
+h6 {
+    font-size: 2.5vw;
+}
 
 /*Maybe the float thing will make it overlap? Combining this with fade in on scroll so- fun
 https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
@@ -1020,8 +1032,11 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
 }
 
 /*I'm gonna swap the background to be a phoenix (which I need to draw but leave that for later) for now gonna do a filler background*/
+/*Having an issue aligning it right*/
 .background {
-    background: url("https://i.pinimg.com/736x/17/66/a2/1766a262565c6dc53f39ed9e96ee55c7--art-addiction-phoenix.jpg") no-repeat fixed 0 0 / cover;
+    background: url("#") no-repeat fixed 0 0 / contain;
+    max-width: 100%;
+    justify-content: center;
 }
 
 /*Ok this might have done nothing- I might have to change the margin on the reach out text*/

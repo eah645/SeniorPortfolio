@@ -5,60 +5,62 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
+  <!--Required Meta Tags-->
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <!--Animation css (credit: https://animate.style/)-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!--My css-->
   <link rel="stylesheet" href="style.css" />
+
   <!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
   <script src="https://unpkg.com/vue@3.0.2"></script>
   <!--JQuery link idk if this'll work-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
   <title>Erin's portfolio</title>
+  <link rel="icon" href="images\Logo1.PNG">
 </head>
 
 <body>
   <div class="container"></div>
   <header>
-  
+
     <!--Do I fucking rebuild this so the display on mobile is different? Yup-->
     <div class="row desktop-header d-lg-inline-flex d-md-inline-flex d-sm-none">
-      <div class="col-md-8">
-        <h1>Hello</h1>
-        <hr class="break-line">
-        <h5>I'm Erin, a senior in high school working with art / design and web development</h5>
-        <!--Need to figure out how to make these responsive-->
-        <div class="btn-header">
-          <a href="mailto:eah31@optimum.net" type="button"
-            class="header-links header-links-transition border">eah31@optimum.net</a>
-          <a href="https://github.com/eah645" type="button" class="header-links header-links-transition border">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
-              viewBox="0 0 16 16">
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-            </svg>
-          </a>
+        <div class="col-md-8">
+            <h1>Hello</h1>
+            <hr class="break-line">
+            <h5>I'm Erin, a senior in high school working with art / design and web development</h5>
+            <!--Need to figure out how to make these responsive-->
+            <div class="btn-header">
+                <a href="mailto:eah31@optimum.net" type="button"
+                    class="header-links header-links-transition border">eah31@optimum.net</a>
+                <a href="https://github.com/eah645" type="button"
+                    class="header-links header-links-transition border">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+            </div>
         </div>
-      </div>
-      <!--I might swap this image to like- idk maybe I'll leave this as the logo and add the image as the paragraph thing-->
-      <div class="col-md-4">
-        <img src="images/Selfie.png" alt="Image of me" class="header-img">
-      </div>
+        <!--I might swap this image to like- idk maybe I'll leave this as the logo and add the image as the paragraph thing-->
+        <div class="col-md-4">
+            <img src="images/Selfie.png" alt="Image of me" class="header-img">
+        </div>
     </div>
     <!--Alright here this is the mobile only header-->
     <div class="mobile-header d-lg-none d-md-none d-sm-block">
-      <h1>Hello</h1>
-      <hr id="header-break-line">
-      <h5>I'm Erin, a senior in high school working with art / design and web development - mobile</h5>
+        <h1>Hello</h1>
+        <hr id="header-break-line">
+        <h5>I'm Erin, a senior in high school working with art / design and web development - mobile</h5>
     </div>
-  </header>
+</header>
   
   <!--Navbar-->
   <!--Ok so it's not collapsing... gotta fix that--->
