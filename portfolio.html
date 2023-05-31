@@ -94,6 +94,27 @@
     </div>
   </nav>
   <div class="container-fluid">
+    <!--Gonna fuck around with stuff real quick--->
+    <!--Ok it's- literally this but if I put it in vue it breaks?
+    I just need it to... it's an issue with the functions or something with the document.ready-->
+    <!--Why the fuck don't you work in vue-->
+    <!--Ok this part this is the- this'll be the images-->
+      <div class="row">
+        <div class="col-md-3">
+          <ul id="facilityList">
+          </ul>
+        </div>
+        <!--And this'll be the popup... I wonder if I can build it out here-->
+        <!--Also you're a dumbass it doesn't work in vue because you wrote the functions in vue for the fucking art file not the stackoverflow code-->
+      </div>
+      <div class="row">
+        <div>
+          <ul id="facilityDetail">
+
+          </ul>
+        </div>
+      </div>
+
     <!--Need to build a text thing here that says click one so like... just do text above the buttons (different row) then make it go away if someone clicks either button (use display: hidden)-->
     <p class="portfolio-popup" id="popup-portfolio">Click a button to see my portfolio for each section!</p>
     <div class="row portfolio-button-row">
@@ -175,33 +196,42 @@
         <hr class="feature-line">
         <!--Alright move this div but it looks cool-->
         <div class="animate__animated animate__fadeInDown">
-          <div id="digital"></div>
           <!--Ok what the fuck why won't it work- it's stacking together instead of being next to each other- do I have to do the fucking ammend child thing-->
           <!--No ok it was in too many divs now it's working-->
           <!--Gonna have to fuck around with the order gonna have to fuck around with it a lot to figure out how to make it look good-->
           <!--WHAT THE FUCK WHY WILL IT ONLY ALIGN WHEN THE IMAGES ARE THE ONLY THING IN THE FOR LOOP-->
           <!--...ok thank you stack overflow it's display: inline-block -->
+
+          <!--OK THIS DOES WORK IN VUE LETS GO I JUST NEED TO MAKE THIS APPLY TO ART NOW- FUCK-->
+          <!--Just a note the formatting is a little weird... it keeps going to the top so it's probably a css thing? Did I copy css?-->
+          <!--I did not ok but worse come to worse just... add css? Anyways--->
           <div id="ArtType" v-for="(works, i) in digitalArt" class="images-div">
+            <!--Haha huh what is this https://stackoverflow.com/questions/33731939/vue-js-toggle-class-on-click
+            Can- can we add where onclick it adds or removes the image- I feel like I haven't worked towards the main goal but fuck maybe this'll help?-->
             <img :src="digitalArt[i].file" class="json-images" @click="active = !active">
-            <div v-if="active"></div>
+            <div v-if="active">
+              Ok so you're underneath each image I can't set that to be !active because you break
+            </div>
             <!--From here is broken so work on it later-->
             <!--Wait no this works right it's just loading them all over each other- so how do I make it that when you click it only one shows up-->
             <!--Idk how the hell you do two functions in one so I'm trying to make it that when this gets called it runs the function to check what the i value is -->
-            <div class="artPopup" id="popupArt" v-else onclick="openForm2()">
-              <h3 class="artPopupHeader">{{ digitalArt[i].popupTitle }}</h3>
+            <div class="artPopup sticky" id="popupArt" v-else onclick="bindDataSet()">
+              <h3 class="artPopupHeader" id="artPopupHeaderID">{{ digitalArt[i].popupTitle }}</h3>
               <!--Another image tag with the same image- I should just do that now huh-->
               <div class="row">
-                <img :src="digitalArt[i].file" alt="..." class="col-lg-9">
+                <img :src="digitalArt[i].file" alt="..." class="col-lg-9 artPopupImg">
               </div>
               <div class="row">
-                <div class="artDesc col-lg-6">
+                <div class="artDesc col-lg-6" id="artDescID">
                   {{ digitalArt[i].popupDesc }}
                 </div>
                 <div class="artDesc col-lg-3">
                   <!--Ok new challenge how to do this- seriously how to make the popup details work where each one is it's own list item and only goes for that i- do I just need to change the for loop-->
                   <!--Ok why the fuck did you add a for loop that- wasn't necessary it's fine now-->
-                  <ul>
-                    <li>{{ digitalArt[i].popupDetails }}</li>
+                  <!--Ok you will be different gotta modify the function slightly but DUDE IT'S WORKING-->
+                  <!--...Was this working the entire time I just missed it- -->
+                  <ul  id="artDetailsID">
+                    <!-- <li>{{ digitalArt[i].popupDetails }}</li> -->
                   </ul>
 
                 </div>

@@ -768,6 +768,7 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
 
 /*Portfolio stuff*/
 
+/*This is the text thing that disappears when you click web or art*/
 .portfolio-popup {
     color: #E1E6E5;
     text-align: center;
@@ -862,24 +863,53 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
 
 .images-div {
     display: inline-block;
+    position: relative;
 }
 
 .artPopup {
     background-color: #e1e6e5;
-    display: block;
     /*How long do you wanna bet center aligning it will take*/
     /*I broke it like 3 times nice- I took a video it looked so broken*/
     /*Justify content doesn't work, align-content: center doesn't work... align-items doesn't work...*/
     /*Holy shit this kinda works- all the popups are overlapped which isn't good but it is center aligned*/
-    /*   position: fixed;
+    /*Ok no I need you to be in the center of the screen- so I guess height 100vh?*/
+    /*So I looked it up position: fixed should work but it's not? So something else is probably fucking with it-*/
+    /*Alright- yknow let's just do this later-*/
+    /*position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 50%; */
+      width: 50%;
+      height: 100vh;*/
+
+      /*Alright fuck- wait is it the display block- lol no ok what the fuck*/
+      /*Anyways just gonna try and style it because still need to do that and at least styling is probably doable?*/
+    position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
 }
 
 .artPopupHeader {
     color: black;
+    height: 5vh;
+}
+
+.artPopupImg {
+    margin-top: 0px;
+}
+
+/*Delete after this is a test for portfolio*/
+.textLimit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.textLimit:hover {
+    cursor: pointer;
 }
 
 /*Feature vue thing*/

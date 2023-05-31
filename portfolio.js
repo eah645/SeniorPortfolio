@@ -135,26 +135,50 @@ const vue_app2 = Vue.createApp({
   data() {
     return {
       digitalArt: [],
-      //Ok what the fuck- this is defined please show up
-      //Wait ok this works- it's gotta be an issue with how I wrote the popup then? Also fuck it doesn't because it affects all of them not just one but that'll hopefully be something to just fix at the end?
-      //...I can't check it works until I can fucking separate all of them- shit
-      //This works this works perfectly fine I'm just a dumbass- I forgot to remove the display: none so it wasn't showing up- ok. Things I need to fix... actually no literally the only thing is make just one show up at a time. The only thing I can think of is write some type of function that depending on the number it only takes that one.
-      //Ok no so- they all load in I had to delete the center align shit so I'll leave it commented let's- just try to figure this part out
-      active: true
-    }
+      active: true,
+    };
   },
   methods: {
-    //Check this let's try using vue: https://codesandbox.io/s/invisible-class-forked-n9d9wg?file=/src/App.vue
-    //Also this lol https://dmitripavlutin.com/vue-show-hide-elements/#:~:text=Vue%20gives%20you%20a%20bunch,that%20hides%20the%20element%20completely.
-    //https://vuejs.org/guide/essentials/conditional.html
-    //Ok that- great I came back to this and it's broken- it won't work on the replit side thing and I can't check console.log without that- fuck
-    //I guess let's spend time working on probably broken code-
-    openForm2() {
-      if (i == 0) {
-        console.log('working 1');
+    //Wait I'm- still a dumbass I- I need to write another function to make only the image appear- oh... ha I- I ignored that
+    //Alright none of this works but THIS IS CLOSE IT'S GOTTA BE THE STACK OVERFLOW FUCKING WORKS
+    //...I never fucking called this and now it's broken ok fun-
+    bindDataSet() {
+      var html = "";
+
+      //So this I wanna replace with the title...
+      //No I want this to be the image I think ok- how is a for loop gonna work in a vue loop thing
+      for (var i = 0; i < digitalArt.length; i++) {
+        html +=
+          "<li onclick='viewDetail(" +
+          digitalArt[i].type +
+          ")' class='textLimit form-control' id=" +
+          digitalArt[i].type +
+          ">" +
+          digitalArt[i].type +
+          " </li>";
       }
-      //Wait so- I need to save these as a variable... that makes sense- do I need like 5 different variables-
-    }
+      //WAIT HOLY SHIT THIS WORKED- so I could technically write this function for each section? Right?
+      //Or... maybe- no ok why did it only work with the title?
+      //Let me actually try rewriting this function lol
+      $("#artPopupHeaderID").append(html);
+      $("#artDescID").append(html);
+      console.log("do I work");
+    },
+    //I need to use you for the detail list. I need to use this. This is literally it. I'm so close dude
+    //...wait was this always working? Like was it always working and I just missed it- you're kidding me
+    //Wait no it wasn't it wasn't formatting right ok great let's go
+    //Alright let's write a different function...convert data from digitalArt.popupDetails into an HTML list. Got it. This is so fucking doable
+    //This function is not working lol ok-
+    //Ok good job it did something- nothing is showing up lol is this running-
+    //Wait ok- ok let's make this work first
+    //Alright I'm done working for today check this out tomorrow or whenever the hell I have this class again https://stackoverflow.com/questions/6692538/generate-unordered-list-from-json-data
+    detailsAppear() {
+      //Well this might be something?
+      /*Returns string in html */
+      //return month + " " + dateArray[2] + ", " + dateArray[0];
+      console.log("I work");
+    },
+
     //Ok issue for later idk why it started acting weird when I added close form but uh- later
     // closeForm() {
     //   document.getElementById('popupArt').style.display = "none";
@@ -162,7 +186,7 @@ const vue_app2 = Vue.createApp({
     //Alright before I overthink this let's code the popup for just this section- actually fuck would it be better to code this out of the vue so I can use it for everything-
 
     //Ok so next function- it'll be like- I might want to do like a case-break statement like if user clicks on the first image then only bring in data from that object in JSON not fucking all of it which it's doing rn- actually just a thought can i do something like set digitalArt[i] = digitalArt then whatever number? idk if thatll work since its not a variable but i is so- fuck it
-  }
+  },
 });
 vue_app2.mount("#vue_app2")
 
@@ -178,29 +202,6 @@ vue_app2.mount("#vue_app2")
 //https://rolly.maj.digital/
 
 //https://stackoverflow.com/questions/50119816/how-to-make-vue-and-bootstrap-4-show-3-cards-per-row
-
-//Code from Isacc (sophomore) 
-//Idk how this part of it works- just the entry part idk the console.log isn't running- do I need to call this wait-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
-
-    if (entry.isIntersecting && entry.target.classList.contains('overlay__bar')) {
-      entry.target.classList.add('show')
-    }
-    if (entry.isIntersecting && entry.target.classList.contains('overlay__dot')) {
-      entry.target.classList.add('dot__show')
-    } else {
-      entry.target.classList.remove('dot__show')
-    }
-
-    if (entry.isIntersecting && entry.target.classList.contains('website__card')) {
-      entry.target.classList.add('website__card--show')
-    } else {
-      entry.target.classList.remove('website__card--show')
-    }
-  })
-});
 
 
 //Back to Top button portfolio
@@ -223,3 +224,7 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+
+ //Ok here for closing it please https://stackoverflow.com/questions/62820398/close-popup-by-clicking-outside-it-javascript
