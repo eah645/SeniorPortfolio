@@ -4,7 +4,8 @@
       "file": "images/Art-img/Momo-JiroInRoom.jpg",
       "popupTitle": "Dorm Room with MHA characters",
       "popupDesc": "Wait what the fuck",
-      "popupDetails": ["Based off My Hero Academia", "Another test filler"]
+      "popupDetails": ["Based off My Hero Academia", "Another test filler"],
+      "ID": 1
     },
     {
       "type": "Digital",

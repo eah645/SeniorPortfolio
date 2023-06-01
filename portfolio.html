@@ -208,14 +208,20 @@
           <div id="ArtType" v-for="(works, i) in digitalArt" class="images-div">
             <!--Haha huh what is this https://stackoverflow.com/questions/33731939/vue-js-toggle-class-on-click
             Can- can we add where onclick it adds or removes the image- I feel like I haven't worked towards the main goal but fuck maybe this'll help?-->
-            <img :src="digitalArt[i].file" class="json-images" @click="active = !active">
-            <div v-if="active">
+            <!--Ok so we're basically using the active !active thing to turn on or off the image. So it's with vue toggle. So now let's try making- Jacob showed me code that might work let's mess with it--->
+            <!--So I think I- I still kinda want this active stuff I've been fucking with but we can stop for now and continue later-->
+            <!--Original code: @click="active = !active"-->
+            <img :src="digitalArt[i].file" class="json-images" id="json-img" @click="sameThing()">
+            <div v-if="!active">
               Ok so you're underneath each image I can't set that to be !active because you break
+              <!--Let's... fuck around lol even though I have the function it's still broken so fun- I'm gonna try adding a class/id to the id so I can then get the ID by that element and set it to the variable Jacob had-->
+              <p id="DigitalID">{{ digitalArt.ID }}</p>
             </div>
             <!--From here is broken so work on it later-->
             <!--Wait no this works right it's just loading them all over each other- so how do I make it that when you click it only one shows up-->
             <!--Idk how the hell you do two functions in one so I'm trying to make it that when this gets called it runs the function to check what the i value is -->
-            <div class="artPopup sticky" id="popupArt" v-else onclick="bindDataSet()">
+            <!--Wait so- this function doesn't work because of the v-else? And if I do v-on it doesn't work overall?-->
+            <div class="artPopup sticky" id="popupArt" v-if:click="testFunct()">
               <h3 class="artPopupHeader" id="artPopupHeaderID">{{ digitalArt[i].popupTitle }}</h3>
               <!--Another image tag with the same image- I should just do that now huh-->
               <div class="row">

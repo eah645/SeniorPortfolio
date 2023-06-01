@@ -139,6 +139,38 @@ const vue_app2 = Vue.createApp({
     };
   },
   methods: {
+    //Jacob showed me his code apparently this- it looks like exactly what I'm going for which- I'm gonna try and integrate it see what happens
+    //Link to it because I doubt I'll have enough time in this class: https://replit.com/@JacobSze/Boredom?v=1#year2018.html
+    //Wait oh my god it's not exactly the same the way they did it is putting each image in and giving it an ID so... maybe I can add that to JSON and fuck with it
+    //So for some reason no functions are working so let's just- let's write a new function and fuck around until it works
+    //I wrote the vue thing wrong the onclick was wrong- this runs when you click on the button so now I need to make it when you click the image the first time... right?
+    testFunct() {
+      console.log("vue isn't fucking broken");
+    },
+
+    //Jacob's function
+    //Yeah no I- I like that I know I have a basic function that works now it's a matter of fucking it up so it works for me
+    //Wait wait ok do- do I do this with a ton of defining variables for every object? I tried stringify that was being weird... maybe parse would work?
+    //What I want to do is in that last part just... make the digitalArt call the entire object that has the id
+    //Oh wait filter method... putting an example function below this one
+    sameThing() {
+      //You you should be the digitalArt ID because that's the only content in that id
+      var id = document.getElementById("digitalID");
+      console.log(id);
+      let image = document.getElementById("json-img");
+      image.src = digitalArt[id];
+    },
+
+    //Link: https://stackoverflow.com/questions/27263031/calling-specific-object-by-id-from-a-json-file-in-my-js
+    //So this... looks like I need to then write out separate functions for each which I don't particuarly want to do but I'm not totally against it- like I could do this with a case/switch but then I'd need to add another function each time I added stuff (Again- not the biggest issue but- y'know)
+    //Alright let- let me just make this work if I can then we- ok go work
+    getTrivia(id, items) {
+      var filtered = items.filter(function (item) {
+        return item.id == id;
+      });
+      return filtered[0];
+    },
+
     //Wait I'm- still a dumbass I- I need to write another function to make only the image appear- oh... ha I- I ignored that
     //Alright none of this works but THIS IS CLOSE IT'S GOTTA BE THE STACK OVERFLOW FUCKING WORKS
     //...I never fucking called this and now it's broken ok fun-
