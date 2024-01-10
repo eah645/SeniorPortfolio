@@ -29,8 +29,18 @@ function educationAnimation() {
 
 //Workexp function that might actually work-
 //Write the function so it adds a class that keeps the altered color while clicked onto and removes it once clicked off
-function workButton() {
-  document.getElementByClassName("workBtn").addClass(".workBtn-active");
+function workButtonRider() {
+  document.getElementById("riderGameBtn").classList.add("workBtn-active");
+  document.getElementById("riderUni").classList.remove("hide-work");
+  document.getElementById("eastmontID").classList.add("hide-work");
+  document.getElementById("orchardsBtn").classList.remove("workBtn-active");
+}
+
+function workButtonEastmont() {
+  document.getElementById("orchardsBtn").classList.add("workBtn-active");
+  document.getElementById("eastmontID").classList.remove("hide-work");
+  document.getElementById("riderUni").classList.add("hide-work");
+  document.getElementById("riderGameBtn").classList.remove("workBtn-active");
 }
 
 //WorkExp navbar

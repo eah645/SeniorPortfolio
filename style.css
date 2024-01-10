@@ -133,7 +133,10 @@ h3 {
 
 /*Header stuff (Includes the hello, intro text, image, and buttons*/
 header {
-    margin: 50px;
+    margin-top: 5vh;
+    margin-right: 50px;
+    margin-left: 50px;
+    height: 80vh;
 }
 
 h1 {
@@ -143,7 +146,8 @@ h1 {
 }
 
 h5 {
-    font-size: 3.5vw;
+    /*4vh looks good on pc, too big on phone, need to make a new thing*/
+    font-size: 4vh;
     color: #E1E6E5;
     font-family: 'Lato';
     /*Idk if this is applying*/
@@ -156,21 +160,36 @@ h2 {
 }
 
 .btn-header {
-    display: inline-block;
+    display: flex;
+    justify-content: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*...I can't center align these fuck- fix it later*/
 /*Alright now I can't fix these on mobile- this isn't a big deal for the portfolio presentation but I'll fix it eventually*/
+/*Ok let's fix this... Need to center it since I don't have other buttons*/
+/*There's something wrong with the entire button lol*/
+/*Gonna overthink... should I leave this on top or remove it?*/
+
+.navbar {
+    height: 15vh;
+}
+
+/*This is the github link on the header*/
 .header-links {
     background-color: #556972;
     color: #E1E6E5;
-    font-size: 15px;
-    padding: 10px;
     padding-left: 20px;
+    padding-top: 1vh;
     padding-right: 20px;
-    margin: 20px;
     border-radius: 10px;
-    align-items: center;
+}
+
+/*Need to center align*/
+.bi-github {
+    width: 7vh;
+    height: 7vh;
 }
 
 .header-links-transition {
@@ -182,7 +201,8 @@ h2 {
 .header-links:hover {
     background-color: #09181F;
     color: #556972;
-    transition: 1s;
+    box-shadow: 10px 5px 5px #E1E6E5;
+    transition: 1s;  
 }
 
 .header-img {
@@ -190,10 +210,11 @@ h2 {
     width: 100%;
     max-width: 300px;
     height: auto;
-    padding-top: 30px;
+    margin-top: 30px;
     /*How do I fucking center align this :)*/
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid #556972;
 }
 
 .header-img {
@@ -214,9 +235,35 @@ h2 {
     height: 66vh;
 }
 
+/*All mobile stuff go in here*/
 @media (max-width: 600px) {
     .desktop-header {
         display: none;
+    }
+    h5 {
+        font-size: 4vw;
+    }
+    h1 {
+        font-size: 6vw;
+    }
+    .btn-header {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-links {
+    background-color: #556972;
+    color: #E1E6E5;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    }
+    .bi-github {
+        width: 7vw;
+        height: 7vw;
     }
 }
 
@@ -333,34 +380,6 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     --shine-transition: all 0.65s ease-in-out;
 }
 
-/*So it's removing the nav-link.active class so... let me try changing this*/
-/*Wait- I deleted it just to check that was the issue- and it didn't fuck up anything else?*/
-/*Here's the code just to be safe-
-.nav-link.active {
-    position: relative;
-    overflow: hidden;
-    font-size: 1.1rem;
-    padding: 1rem 3rem;
-    border-radius: 4px;
-    text-decoration: none;
-    border: var(--btn-border);
-    color: var(--btn-text-color);
-    background: var(--btn-bg);
-}
-
-.nav-link.active:not(:last-child) {
-    margin-bottom: 3rem;
-}
-
-.nav-link.active::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--shine-effect);
-}*/
-
 .active-hover::before {
     left: -100%;
     transition: var(--shine-transition);
@@ -463,6 +482,11 @@ h2 {
 /*Work Experience*/
 
 /*Work experience navbar*/
+
+.work-nav {
+    height: 15vh;
+}
+
 /*More trying to make the nav work-*/
 #navbar {
     background-color: #09181F;
@@ -476,6 +500,7 @@ h2 {
     color: #E1E6E5;
     white-space: nowrap;
     overflow: hidden;
+    padding-top: 1vh;
     /* Hide horizontal scrollbar */
 }
 
@@ -553,8 +578,10 @@ a.workNav-active {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("https://media.istockphoto.com/id/1313302904/vector/blue-bird-feather-icon-decorative-design-element-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=F_UWic3Y8QdxWFpT3VWxS07mkFLFnU6dUT7eSQhVoPg=");
+    /*Change image to something... Or maybe slightly redesign this page*/
+    /*background-image: url("https://media.istockphoto.com/id/1313302904/vector/blue-bird-feather-icon-decorative-design-element-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=F_UWic3Y8QdxWFpT3VWxS07mkFLFnU6dUT7eSQhVoPg=");*/
     min-height: 400px;
+    background-color: #E1E6E5;
 }
 
 .caption {
@@ -603,6 +630,11 @@ a.workNav-active {
 
 .school-title {
     font-size: 20px;
+}
+
+/*Hides the not-active work experience description*/
+.hide-work {
+    display: none;
 }
 
 .certificate-img {
