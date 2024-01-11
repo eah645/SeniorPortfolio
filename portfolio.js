@@ -79,13 +79,14 @@ const vue_app = Vue.createApp({
   data() {
     return {
       websites: [],
-      title: "All Projects",
+      title: "All Projects"
     };
   },
   methods: {
     //It's defined now :) ...no the function still doesn't work it's only showing up as false so there's an issue with the condition in the if statement?
     //THIS WORKS!!!!! LETS FUCKING GO!!!!! (...yes I yelled it out loud and that was satisfying as hell)
     //Holy shit it actually does work I just need to make the columns respond to this... how
+    //Wait ok so- why do I even need this
     makeNewRow(i) {
       if ((i + 1) % 4 == 0) {
         console.log("true");
