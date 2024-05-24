@@ -164,6 +164,7 @@ h2 {
     justify-content: left;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5vh;
 }
 
 /*...I can't center align these fuck- fix it later*/
@@ -174,6 +175,7 @@ h2 {
 
 .navbar {
     height: 15vh;
+    justify-content: center;
 }
 
 /*This is the github link on the header*/

@@ -63,6 +63,7 @@ function backToTop() {
 
 //Alright so this is working with vue- this created does nothing-
 //So this vue is for all projects that-that's it
+//This breaks on safari on the mac- works on everything else
 const vue_app = Vue.createApp({
   created() {
     fetch("JSON/Web.json")
@@ -79,7 +80,7 @@ const vue_app = Vue.createApp({
   data() {
     return {
       websites: [],
-      title: "All Projects"
+      title: "All Projects",
     };
   },
   methods: {
