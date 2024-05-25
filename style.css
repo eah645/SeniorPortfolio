@@ -175,7 +175,8 @@ h2 {
 
 .navbar {
     height: 15vh;
-    justify-content: center;
+    /*Center aligns the nav
+    /*text-align: center;*/
 }
 
 /*This is the github link on the header*/
@@ -281,6 +282,7 @@ https://alvarotrigo.com/blog/animated-backgrounds-css/ */
 /*Navbar*/
 nav {
     overflow-x: hidden;
+    height: 15vh;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -493,7 +495,7 @@ h2 {
 #navbar {
     background-color: #09181F;
     transition: background-color 0.5s;
-    height: auto;
+    height: 15vh;
     overflow-x: scroll;
     font-size: 2.5vw;
     padding-left: 40px;
@@ -502,7 +504,6 @@ h2 {
     color: #E1E6E5;
     white-space: nowrap;
     overflow: hidden;
-    padding-top: 1vh;
     /* Hide horizontal scrollbar */
 }
 
@@ -707,7 +708,7 @@ a.workNav-active {
 @keyframes current {
     100% {
         /*Might leave it on 99 because I think it runs twice if it's 100? Which- idk why*/
-        width: 75%;
+        width: 25%;
     }
 }
 
