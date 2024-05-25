@@ -439,7 +439,10 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
 
 @media (max-width: 500px) {
     .img-thumbnail {
-        height: 15vh;
+        height: 20vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
