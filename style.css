@@ -130,7 +130,7 @@ h3 {
     transition: 1s;
 }
 
-
+/*Header stuff*/
 /*Header stuff (Includes the hello, intro text, image, and buttons*/
 header {
     margin-top: 5vh;
@@ -167,29 +167,46 @@ h2 {
     margin-top: 5vh;
 }
 
-/*...I can't center align these fuck- fix it later*/
-/*Alright now I can't fix these on mobile- this isn't a big deal for the portfolio presentation but I'll fix it eventually*/
-/*Ok let's fix this... Need to center it since I don't have other buttons*/
-/*There's something wrong with the entire button lol*/
-/*Gonna overthink... should I leave this on top or remove it?*/
-
-.navbar {
-    height: 15vh;
-    /*Center aligns the nav
-    /*text-align: center;*/
+h3 {
+    height: 30vh;
+    color: white;
+    font-family: 'Lato';
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 0;
+    letter-spacing: 8px;
+    transition: 1s;
 }
 
-/*This is the github link on the header*/
-.header-links {
+.break-line {
     background-color: #556972;
-    color: #E1E6E5;
-    padding-left: 20px;
-    padding-top: 1vh;
-    padding-right: 20px;
-    border-radius: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-height: 2px;
+    z-index: 10000px;
+    border: none;
+    transition: 1s;
 }
 
-/*Need to center align*/
+#header-break-line {
+    width: 75vw;
+    margin-left: 0px;
+    border-color: #556972;
+}
+
+.header-img {
+    display: block;
+    width: 100%;
+    max-height: 50vh;
+    width: auto;
+    margin-top: 30px;
+    /*How do I fucking center align this :)*/
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #556972;
+}
+
+/*Github btn*/
 .bi-github {
     width: 7vh;
     height: 7vh;
@@ -208,26 +225,14 @@ h2 {
     transition: 1s;  
 }
 
-.header-img {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-top: 30px;
-    /*How do I fucking center align this :)*/
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #556972;
-}
-
-.header-img {
-    display: none;
-}
-
-@media only screen and (min-width: 500px) {
-    .header-img {
-        display: block;
-    }
+.header-links {
+    background-color: #556972;
+    color: #E1E6E5;
+    padding-left: 20px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 20px;
+    border-radius: 10px;
 }
 
 .desktop-header {
@@ -244,10 +249,10 @@ h2 {
         display: none;
     }
     h5 {
-        font-size: 4vw;
+        font-size: 4vh;
     }
     h1 {
-        font-size: 6vw;
+        font-size: 6vh;
     }
     .btn-header {
         display: flex;
@@ -270,19 +275,19 @@ h2 {
     }
 }
 
-@media (min-width: 601px) {
-    .mobile-header {
+/*When nav collapses*/
+@media (max-width: 992px) {
+    .nav-image {
+        width: 15vw;
+    }
+    .header-img {
         display: none;
     }
 }
 
-/*Background image idea- just to make it somewhat animated / interesting this'd only be on the top part
-https://alvarotrigo.com/blog/animated-backgrounds-css/ */
 
-/*Navbar*/
-nav {
-    overflow-x: hidden;
-    height: 15vh;
+.navbar {
+    background-color: #556972;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -291,48 +296,23 @@ nav {
     padding-right: 40px;
     font-family: 'Courier New';
     color: #E1E6E5;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-@media (max-width: 500px) {
-    .navbar .navbar-nav .nav-link {
-        font-size: 5vw;
-    }
-}
-
-.navbar {
-    background-color: #556972;
-}
-
-/*This should apply to all except the first- I'll just make it so it doesn't have class active ok got it*/
-/*So ok if I remove this entire class then it works? Or- no*/
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-    color: #E1E6E5;
-    /*So just as a note the background-color makes the animation not work*/
-    border: 2px solid;
-    border-radius: 5px;
 }
 
 .nav-image {
-    max-height: 80px;
-    max-width: 80px;
+    max-height: 11vh;
+    max-width: 11vw;
 }
 
-/*This will not go to the right what the fuck*/
-/*What the fuck. I've been trying this for over an hour in total what the fuck*/
-/*Oh my god it was the justify content thing I just had to add a div-
-It does still lag when I open it but we'll deal with that later I think it'll take forever to fix*/
-.willYouGoRight {
-    float: right;
+.nav_active {
+    border: 2px solid #E1E6E5;
+    border-radius: 5px;
 }
 
-.home-icon {
-    margin-left: 20px;
-}
+
+
+
+
+
 
 /*Credit: JulioCodes https://github.com/juliocodes-sm/Reels/tree/main/Buttons/02*/
 
@@ -416,6 +396,8 @@ It does still lag when I open it but we'll deal with that later I think it'll ta
     }
 }
 
+
+
 /*Homepage*/
 .intro-paragraph {
     margin: 30px;
@@ -486,6 +468,12 @@ h2 {
     border-color: #E1E6E5;
 }
 
+
+
+
+
+
+
 /*Work Experience*/
 
 /*Work experience navbar*/
@@ -506,7 +494,7 @@ h2 {
     font-family: 'Courier New';
     color: #E1E6E5;
     white-space: nowrap;
-    overflow: hidden;
+    overflow-y: hidden;
     /* Hide horizontal scrollbar */
 }
 
@@ -590,17 +578,25 @@ a.workNav-active {
     background-color: #E1E6E5;
 }
 
+.aaa {
+    font-size: 4vh;
+}
+
+.edu_history {
+    font-size: 6vh;
+}
+
 .caption {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 40%;
     width: 100%;
     text-align: center;
     /*May change color- It'll be a darker picture with a blue feather because that looks cool
         so... filler color will be the dark blue*/
     color: #09181F;
     font-family: 'Courier New';
-    font-size: 5vw;
+    font-size: 10vh;
 
 }
 
@@ -632,10 +628,11 @@ a.workNav-active {
     text-align: left;
     margin-top: 15px;
     margin-bottom: 10px;
+    font-size: 3.5vh;
 }
 
 .school-title {
-    font-size: 20px;
+    font-size: 4vh;
 }
 
 /*Hides the not-active work experience description*/
@@ -655,8 +652,8 @@ a.workNav-active {
 /*Credit: https://www.youtube.com/watch?v=8ULg-7SvP2o*/
 .progress-bar {
     background: #959595;
-    width: 40vw;
-    max-width: 400px;
+    width: 30vw;
+    max-width: 35vw;
     height: 10px;
     border-radius: 5px;
     margin-top: 50px;
@@ -667,6 +664,7 @@ a.workNav-active {
     height: 10px;
     border-radius: 5px;
     width: 0%;
+    justify-content: right;
 }
 
 .progress-bar div span {
@@ -799,6 +797,109 @@ a.workNav-active {
 
 h6 {
     font-size: 2.5vw;
+}
+
+/*Work exp mobile stuff*/
+@media (max-width: 600px) {
+    #navbar a {
+        display: inline-block;
+        text-align: center;
+        color: #E1E6E5;
+        transition: color 0.5s;
+        font-size: 5vw;
+    }
+    #navbar {
+        padding-left: 0px;
+    }
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        color: #09181F;
+        font-family: 'Courier New';
+        font-size: 8.5vw;
+    }
+    .whiteDesc {
+        /*Should I change this font? Little hard to read*/
+        color: #E1E6E5;
+        background-color: #556972;
+        font-family: 'Lato';
+        padding-top: 2vh;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .aaa {
+        font-size: 3.1vh;
+        text-align: left;
+    }
+    .break-line-2 {
+        background-color: #09181F;
+        margin-left: 0px;
+        margin-right: 2.5vw;
+        min-height: 2px;
+        z-index: 10000px;
+    }
+    .edu_history {
+        font-size: 5vh;
+    }
+    .school-lists {
+        padding-left: 0px;
+    }
+    .schools {
+        color: black;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 3.5vh;
+    }
+    
+    .school-title {
+        font-size: 4vh;
+    }
+    small {
+        text-align: center;
+    }
+    .progress-bar {
+        background: #959595;
+        width: 80vw;
+        max-width: 85vw;
+        height: 10px;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .work-header {
+        font-family: 'Lato';
+        font-size: 6vh;
+    }
+    .workBtn {
+        font-size: 3vh;
+    }
+    .work-total-desc {
+        border: 1px solid black;
+        margin-top: 5vh;
+        margin-left: 50px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    
+    .work-date {
+        font-size: 4vh;
+        margin-top: 20px;
+        text-align: left;
+    }
+    
+    .workDesc {
+        text-align: left;
+        font-size: 3.5vh;
+    }
+    .card-title {
+        font-size: 4vh;
+    }
+    .cc {
+        font-size: 6vh;
+    }
 }
 
 /*Maybe the float thing will make it overlap? Combining this with fade in on scroll so- fun
@@ -1006,10 +1107,11 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
 
 #heading {
     text-align: center;
-    margin: 1em;
+    margin: 0.5em;
     color: #E1E6E5;
-    font-size: 2.5em;
+    font-size: 3em;
     font-family: 'Courier New';
+    font-style: bold;
 }
 
 .field {
@@ -1024,6 +1126,12 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
     color: white;
     background-color: #171717;
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.contact-note {
+    font-family: 'Lato';
+    font-style: bold;
+    font-size: 1.5em;
 }
 
 .input-icon {
@@ -1097,6 +1205,33 @@ https: //bricampgomez.com/blog/how-to-overlap-images-in-css/ */
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*Contact mobile stuff*/
+@media (max-width: 600px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0em;
+        padding-right: 0em;
+        padding-bottom: 0em;
+        background-color: #171717;
+        border-radius: 20px;
+    }
+    #heading {
+        font-size: 6vh;
+        text-align: center;
+        margin-top: 1em;
+        color: #E1E6E5;
+        font-family: 'Courier New';
+    }
+    .contact-note {
+        font-size: 2.75vh;
+    }
+    .footer-text {
+        text-align: left;
+    }
 }
 
 /*I'm gonna swap the background to be a phoenix (which I need to draw but leave that for later) for now gonna do a filler background*/
@@ -1183,6 +1318,11 @@ footer {
 
 .whatAreYou:hover {
     color: transparent;
+}
+
+/*Footer mobile*/
+@media (max-width: 600px) {
+    
 }
 
 /*Hopefully stuff for every page*/
