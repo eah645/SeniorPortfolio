@@ -151,6 +151,27 @@
     "webTitle": "NJIT-3: IMDB Top Movies",
     "webDesc": "NJIT project which shows off top movies, different images on click, and interactive ratings",
     "SiteLink": "https://eah645.github.io/NJIT-3/"
+  },
+  {  
+    "year": "5",
+    "webImg": "images/Web images/feelingsquotes.png",
+    "webTitle": "Feelings quotes",
+    "webDesc": "Website that consists of motivational quotes and an in-depth analysis on their meaning",
+    "SiteLink": "https://feelingsquotes.com"
+  },
+  {  
+    "year": "5",
+    "webImg": "images/Web images/eyeFatigue.png",
+    "webTitle": "Eye Fatigue",
+    "webDesc": "Website that provides medical advice on different eye conditions",
+    "SiteLink": "https://eyefatigue.com"
+  },
+  {  
+    "year": "5",
+    "webImg": "images/Web images/blueCollarMarketingGroup.png",
+    "webTitle": "Blue Collar Marketing Group",
+    "webDesc": "Website I worked on for the Blue Collar Marketing Group",
+    "SiteLink": "https://bluecollarmarketinggroup.com"
   }
 
 ]
